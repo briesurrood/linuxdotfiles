@@ -1,0 +1,66 @@
+! External Dependencies:
+!
+! xclip
+! https://github.com/muennich/urxvt-perls/
+! https://github.com/DaveDavenport/rofi
+!
+! Usage:
+!
+! xrdb -load ~/.Xresources
+!
+! TODO
+! Create a palette using Apple Space Gray #b4b5b9
+! More colors can be found at Adobe Color
+! Use DejaVu Sans Mono for Italics
+
+Xft.dpi:                       96
+Xft.antialias:                 true
+Xft.hinting:                   true
+Xft.hintstyle:                 hintfull
+Xft.rgba:                      rgb
+
+Emacs.menuBar:                 off
+Emacs.toolBar:                 off
+Emacs.verticalScrollBars:      off
+Emacs.font:                    DejaVu Sans Mono-9
+
+rofi.fg:                       #eeeeee
+rofi.bg:                       #121212
+rofi.bc:                       #121212
+rofi.fg-active:                #eeeeee
+rofi.fg-urgent:                #dc322f
+rofi.hlfg-active:              #ffffff
+rofi.hlfg-urgent:              #fdf6e3
+rofi.bg-active:                #285577
+rofi.bg-urgent:                #fdf6e3
+rofi.hlbg-active:              #285577
+rofi.hlbg-urgent:              #dc322f
+rofi.bgalt:                    #121212
+rofi.hlfg:                     #ffffff
+rofi.hlbg:                     #285577
+rofi.font:                     DejaVu Sans Mono 10
+
+URxvt.scrollBar:               false
+URxvt.termName:                rxvt-unicode-256color
+URxvt.saveLines:               8192
+URxvt.letterSpace:             -1
+URxvt.font:                    xft:DejaVu Sans Mono:pixelsize=12:Regular
+URxvt.boldFont:                xft:DejaVu Sans Mono:pixelsize=12:Bold
+URxvt.internalBorder:          4
+URxvt.externalBorder:          0
+URxvt.background:              #080808
+URxvt.foreground:              #eeeeee
+URxvt.cursorColor:             #eeeeee
+URxvt.highlightSelection:      true
+URxvt.loginShell:              true
+URxvt.mapAlert:                true
+URxvt.underlineColor:          white
+URxvt.clipboard.copycmd:       xclip -i -selection clipboard
+URxvt.clipboard.pastecmd:      xclip -o -selection clipboard
+URxvt.perl-ext-common:         keyboard-select,clipboard
+URxvt.keysym.M-Escape:         perl:keyboard-select:activate
+URxvt.keysym.M-c:              perl:clipboard:copy
+URxvt.keysym.M-v:              perl:clipboard:paste
+URxvt.keysym.M-C-v:            perl:clipboard:paste_escaped
+URxvt.keysym.Home:             \033[1~
+URxvt.keysym.End:              \033[4~

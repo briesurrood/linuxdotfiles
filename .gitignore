@@ -1,0 +1,15 @@
+Trash/
+.git/
+.vim/bundle
+.vim/.netrwhist
+.vifm/vifminfo
+*.elc
+.emacs.d/elisp/ace-jump-mode/
+.emacs.d/elisp/circe/
+.emacs.d/elisp/emacs-async/
+.emacs.d/elisp/evil-leader/
+.emacs.d/elisp/evil-matchit/
+.emacs.d/elisp/evil-surround/
+.emacs.d/elisp/evil/
+.emacs.d/elisp/helm/
+.emacs.d/elisp/god-mode
