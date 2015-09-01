@@ -37,7 +37,7 @@ function! VersionControlOpen()
     "#TODO Remove Hardcoding
     let directory = substitute(system('git rev-parse --show-toplevel'), '\n$', '', '')
     if !v:shell_error
-        :Silent git-cola > /dev/null 2>&1 &
+        :Silent tig
     else
         echo expand("%:p:h") "is not a git repository"
     endif
