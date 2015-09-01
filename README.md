@@ -15,3 +15,5 @@ pacman -S zsh zsh-completions grml-zsh-config
 
 System Dependencies
 mercurial git xclip xsel
+
+#TODO: Remove TODO's!
