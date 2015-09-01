@@ -109,6 +109,6 @@ source ~/.vim/config/settings.vim
 source ~/.vim/config/functions.vim
 source ~/.vim/config/plugins.vim
 source ~/.vim/config/keyboard.vim
-color ron
 source ~/.vim/config/hacks.vim
+color ron
 color generic

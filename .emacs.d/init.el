@@ -66,6 +66,7 @@
 (require 'ace-jump-mode)
 
 ;;Circe
+;;#FIXME: Check irssi as an alternative
 (add-to-list 'load-path "~/.emacs.d/elisp/circe")
 (require 'circe)
 (setq circe-default-nick "thegladiator"
@@ -107,6 +108,7 @@
 (require 'dash)
 
 ;;Emms
+;;#FIXME: Find alternative
 (add-to-list 'load-path "~/.emacs.d/elisp/emms/lisp")
 (require 'emms-setup)
 (emms-all)

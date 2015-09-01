@@ -52,6 +52,7 @@ hi PreProc         guifg=#faf4c6 gui=none ctermfg=230
 hi Todo            guifg=#ff9f00 guibg=#202020 gui=none
 
 "My Customizations
+hi Normal ctermbg=235
 hi PreProc ctermfg=208 cterm=none
 hi Special ctermfg=161 cterm=none
 hi Directory ctermfg=105

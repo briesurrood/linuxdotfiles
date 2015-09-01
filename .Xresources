@@ -41,6 +41,7 @@ rofi.hlbg:                     #285577
 rofi.font:                     DejaVu Sans Mono 10
 
 URxvt.scrollBar:               false
+URxvt*iconFile:                /home/nishant/linuxdotfiles/.icons/utilities-terminal.png
 URxvt.termName:                rxvt-unicode-256color
 URxvt.saveLines:               8192
 URxvt.letterSpace:             -1

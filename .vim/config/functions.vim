@@ -46,7 +46,7 @@ command! VersionControlOpen call VersionControlOpen()
 
 function! FileExplorer()
     "#TODO Fix GUI
-        :Silent urxvt -e vifm -c only
+    :Silent urxvt -e vifm -c only
 endfunction
 command! FileExplorer call FileExplorer()
 
@@ -58,7 +58,7 @@ function! IPythonExecute()
 endfunction
 "Use & to run in background
 command! -nargs=1 Silent
-\ | execute ':silent !'.<q-args>
-\ | execute ':redraw!'
+            \ | execute ':silent !'.<q-args>
+            \ | execute ':redraw!'
 
 "}}}

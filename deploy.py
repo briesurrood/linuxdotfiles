@@ -1,7 +1,6 @@
-# TODO Bash Shebang
+#!/usr/bin/python3
 import os
 import subprocess
-
 
 home = os.path.expanduser("~")
 dotfiles_directory = os.getcwd()
@@ -13,6 +12,7 @@ git_details[os.path.join(dotfiles_directory, ".emacs.d", "elisp")] = \
     [
     "https://github.com/winterTTr/ace-jump-mode.git",
     "https://github.com/jwiegley/emacs-async.git",
+    #FIXME: Move evil to mercurial
     "https://github.com/emacsmirror/evil.git",
     "https://github.com/cofi/evil-leader.git",
     "https://github.com/redguardtoo/evil-matchit.git",

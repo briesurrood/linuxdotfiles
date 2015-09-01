@@ -12,7 +12,7 @@ set default-fg "#bcbcbc"
 set statusbar-bg "#262626"
 set statusbar-fg "#bcbcbc"
 set inputbar-bg "#262626"
-set inputbar-fg "#000000"
+set inputbar-fg "#eeeeee"
 set recolor-darkcolor "#bcbcbc"
 set recolor-lightcolor "#262626"
 set recolor true
@@ -61,5 +61,3 @@ set pages-per-row 1
 
 map = zoom in
 map - zoom out
-map + zoom best-fit
-map f zoom width
