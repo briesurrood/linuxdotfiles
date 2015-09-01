@@ -66,7 +66,7 @@
 (require 'ace-jump-mode)
 
 ;;Circe
-;;#FIXME: Check irssi as an alternative
+;;#FIXME: Check weechat as an alternative
 (add-to-list 'load-path "~/.emacs.d/elisp/circe")
 (require 'circe)
 (setq circe-default-nick "thegladiator"
