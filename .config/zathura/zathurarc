@@ -1,12 +1,7 @@
-set window-height 1024
-set window-width 768
-set adjust-open width
-set first-page-column 2
+set guioptions ""
 set window-title-basename false
 set statusbar-basename false
-set guioptions ""
 set selection-clipboard clipboard
-set adjust-open width
 set default-bg "#262626"
 set default-fg "#bcbcbc"
 set statusbar-bg "#262626"
@@ -56,8 +51,3 @@ map [fullscreen] <C-o> jumplist backward
 map [fullscreen] <C-i> jumplist forward
 
 map [index] q quit
-
-set pages-per-row 1
-
-map = zoom in
-map - zoom out

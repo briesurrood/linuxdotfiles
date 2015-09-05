@@ -104,6 +104,7 @@ if g:color_brighten == 1
         hi PreProc ctermfg=13
     elseif g:colors_name == 'ron'
         hi Todo ctermbg=none ctermfg=none cterm=bold
+        hi PreProc ctermfg=14
     elseif g:colors_name =='slate'
         hi Type ctermfg=112
         hi Include ctermfg=9

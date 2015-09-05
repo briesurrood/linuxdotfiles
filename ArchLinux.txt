@@ -1,0 +1,47 @@
+A small guide to setup a functional Arch Linux distribution.
+
+[Installation]
+
+Libraries
+
+ttf-dejavu
+freetype2
+xorg
+xorg-driver
+networkmanager
+xorg-fonts-75dpi (Remove)
+xorg-fonts-100dpi (Remove)
+
+Application
+
+xfce4
+xfce4-goodies
+firefox
+chromium
+hexchat
+zathura-mupdf
+rxvt-unicode-pixbuf
+
+[Appearance]
+
+[INFO]
+
+<Earnestly> thealchemist: You can tar up the root and probably use that, or just point nspawn at the root.
+<Earnestly> thealchemist: Try it
+<Earnestly> thealchemist: I'm curious if nspawn will "Just Work™" if you already have a centos root
+<Earnestly> thealchemist: As in, `systemd-nspawn -bD /var/lib/lxc/centos`
+
+[#TODO] 
+
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher:  chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+Grub https://wiki.archlinux.org/index.php/Syslinux 
+Login Screen Background
+
+#FIXME
+Check intel_set_pch_fifo_underrun error during boot

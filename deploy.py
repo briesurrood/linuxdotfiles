@@ -8,6 +8,7 @@ special_files = ("README.md", "deploy.py", ".config", ".git", ".gitignore")
 directories_to_create = [os.path.join("", *each) for each in
                          [(home, ".backup.d"), (home, ".vim", "bundle")]]
 git_details = {}
+
 git_details[os.path.join(dotfiles_directory, ".emacs.d", "elisp")] = \
     [
     "https://github.com/winterTTr/ace-jump-mode.git",
@@ -30,6 +31,7 @@ git_details[os.path.join(dotfiles_directory, ".emacs.d", "elisp")] = \
     "https://github.com/creichert/ido-vertical-mode.el.git"
 
 ]
+
 git_details[os.path.join(dotfiles_directory, ".vim", "bundle")] = \
     [
     "https://github.com/ctrlpvim/ctrlp.vim",
