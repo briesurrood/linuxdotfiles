@@ -29,6 +29,7 @@ network-manager-applet
 gnome-keyring
 tmux
 tig
+sandy-git
 
 [Appearance]
 

@@ -9,6 +9,7 @@ File Manager: vifm thunar
 Multimedia: mpv vlc
 PDF Viewer: zathura evince mupdf (llpp?)
 IRC: weechat hexchat
+Text Editor: sandy
 
 Extras:
 pacman -S zsh zsh-completions grml-zsh-config
