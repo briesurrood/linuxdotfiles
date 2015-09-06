@@ -1,8 +1,8 @@
-A small guide to setup a functional Arch Linux distribution.
+A guide to setting up a minmal Arch Linux distribution with XFCE.
 
 [Installation]
 
-Libraries
+[[Libraries]]
 
 ttf-dejavu
 freetype2
@@ -11,27 +11,42 @@ xorg-driver
 networkmanager
 xorg-fonts-75dpi (Remove)
 xorg-fonts-100dpi (Remove)
+grub-customizer
 
-Application
+[[Application]]
 
 xfce4
 xfce4-goodies
+lightdm
+lightdm-gtk-greeter
 firefox
 chromium
 hexchat
-zathura-mupdf
+zathura-mupdf-git [With dependencies]
 rxvt-unicode-pixbuf
+networkmanager
+network-manager-applet
+gnome-keyring
+tmux
+tig
 
 [Appearance]
 
+grub-customizer
+Theme: Xfce-flat
+Window: Default-4.6
+
+[Lock]
+
+dm-tool switch-to-greeter can be added to xflock4
+
 [INFO]
 
-<Earnestly> thealchemist: You can tar up the root and probably use that, or just point nspawn at the root.
-<Earnestly> thealchemist: Try it
-<Earnestly> thealchemist: I'm curious if nspawn will "Just Work™" if you already have a centos root
-<Earnestly> thealchemist: As in, `systemd-nspawn -bD /var/lib/lxc/centos`
+Add desktop icon by plaing image into /usr/share/icons/hicolor/apps/XxX/ folder
+Run gtk-update-icon-cache
+Try `systemd-nspawn -bD /var/lib/lxc/centos` or its chroot equivalent
 
-[#TODO] 
+[#TODO]
 
 URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
 URxvt.url-select.launcher:  chromium
@@ -40,8 +55,27 @@ URxvt.keysym.M-u:           perl:url-select:select_next
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
-Grub https://wiki.archlinux.org/index.php/Syslinux 
-Login Screen Background
+Zathura Icon
 
-#FIXME
+[#FIXME]
+
 Check intel_set_pch_fifo_underrun error during boot
+Lightdm errors lightdm --test-mode --debug
+Check why it won't work from tmux
+
+
+[Usage]
+
+[[Tmux]]
+Start tmux with urxvt -sb 0
+
+[[LightDM]]
+
+Enable lightdm.service
+/etc/lightdm/lightdm.conf should have greeter-session=lightdm-gtk-greeter
+/etc/lightdm/lightdm-gtk-greeter.conf to change background image
+
+[[NetworkManager]]
+
+Disable netctl and Enable NetworkManager
+Enable Gnome Services during startup

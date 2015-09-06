@@ -19,11 +19,12 @@ Xft.hinting:                   true
 Xft.hintstyle:                 hintfull
 Xft.rgba:                      rgb
 
+Emacs.font:                    DejaVu Sans Mono-9
 Emacs.menuBar:                 off
 Emacs.toolBar:                 off
 Emacs.verticalScrollBars:      off
-Emacs.font:                    DejaVu Sans Mono-9
 
+rofi.font:                     DejaVu Sans Mono 10
 rofi.fg:                       #eeeeee
 rofi.bg:                       #121212
 rofi.bc:                       #121212
@@ -38,11 +39,11 @@ rofi.hlbg-urgent:              #dc322f
 rofi.bgalt:                    #121212
 rofi.hlfg:                     #ffffff
 rofi.hlbg:                     #285577
-rofi.font:                     DejaVu Sans Mono 10
 
 URxvt.iconFile:                /home/nishant/linuxdotfiles/.icons/utilities-terminal.png
 URxvt.font:                    xft:DejaVu Sans Mono:pixelsize=12:Regular
 URxvt.boldFont:                xft:DejaVu Sans Mono:pixelsize=12:Bold
+URxvt.letterSpace:             0
 URxvt.termName:                rxvt-unicode-256color
 URxvt.highlightSelection:      true
 URxvt.loginShell:              true
@@ -50,12 +51,11 @@ URxvt.mapAlert:                true
 URxvt.scrollBar:               false
 URxvt.background:              #080808
 URxvt.foreground:              #eeeeee
+URxvt.internalBorder:          0
+URxvt.externalBorder:          0
 URxvt.cursorColor:             #eeeeee
 URxvt.underlineColor:          #ffffff
-URxvt.saveLines:               0
-URxvt.internalBorder:          2
-URxvt.externalBorder:          0
-URxvt.letterSpace:             0
+URxvt.saveLines:               4096
 URxvt.keysym.Home:             \033[1~
 URxvt.keysym.End:              \033[4~
 URxvt.perl-lib:                /home/nishant/.urxvt/ext
