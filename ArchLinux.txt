@@ -23,12 +23,12 @@ firefox
 chromium
 hexchat
 zathura-mupdf-git [With dependencies]
-rxvt-unicode-pixbuf
 networkmanager
 network-manager-applet
 gnome-keyring
 tmux
 tig
+termite
 sandy-git
 
 [Appearance]
@@ -68,7 +68,8 @@ Check why it won't work from tmux
 [Usage]
 
 [[Tmux]]
-Start tmux with urxvt -sb 0
+
+Check how to use with Termite
 
 [[LightDM]]
 

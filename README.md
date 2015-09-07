@@ -1,10 +1,10 @@
-Dotfiles for a minimal linux system
+Dotfiles for a minimal Linux system
 
-Shell: bash (zsh?) (Check Extras)
+Shell: bash (zsh?)
 Window Manager: i3wm (conky feh rofi dmenu) (bspwm?) xfce (Check ArchLinux.txt)
-Terminal Emulator: urxvt (gtk2-perl)  (termite?) tmux
-Emacs: emms plugins[Check ~/.emacs.d/init.el]
-Vim: fzf tig plugins[Check ~/.vimrc]
+Terminal Emulator: termite tmux
+Emacs: emms plugins[Check ~/.emacs.d/init.el] - Drop?
+Vim: fzf tig plugins[Check ~/.vimrc] (nvim?)
 File Manager: vifm thunar
 Multimedia: mpv vlc
 PDF Viewer: zathura evince mupdf (llpp?)
