@@ -35,7 +35,7 @@ sandy-git
 
 grub-customizer
 Theme: Xfce-flat
-Window: Default-4.6
+Window: Metabox
 
 [Lock]
 
