@@ -1,0 +1,6 @@
+[options]
+font = DejaVu Sans Mono 9
+
+[colors]
+background = #080808
+foreground = #eeeeee

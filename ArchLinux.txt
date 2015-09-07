@@ -35,7 +35,7 @@ sandy-git
 
 grub-customizer
 Theme: Xfce-flat
-Window: Metabox
+Window: Aguamelon
 
 [Lock]
 

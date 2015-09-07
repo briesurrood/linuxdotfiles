@@ -39,31 +39,3 @@ rofi.hlbg-urgent:              #dc322f
 rofi.bgalt:                    #121212
 rofi.hlfg:                     #ffffff
 rofi.hlbg:                     #285577
-
-URxvt.termName:                rxvt-unicode-256color
-URxvt.iconFile:                /home/nishant/linuxdotfiles/.icons/utilities-terminal.png
-URxvt.saveLines:               4096
-URxvt.highlightSelection:      true
-URxvt.loginShell:              true
-URxvt.mapAlert:                true
-URxvt.scrollBar:               false
-URxvt.internalBorder:          4
-URxvt.externalBorder:          4
-URxvt.font:                    xft:DejaVu Sans Mono:pixelsize=12:Regular
-URxvt.boldFont:                xft:DejaVu Sans Mono:pixelsize=12:Bold
-URxvt.letterSpace:             0
-URxvt.background:              #080808
-URxvt.foreground:              #eeeeee
-URxvt.cursorColor:             #eeeeee
-URxvt.underlineColor:          #ffffff
-URxvt.perl-lib:                /home/nishant/.urxvt/ext
-URxvt.perl-ext-common:         keyboard-select,clipboard,fullscreen
-URxvt.clipboard.copycmd:       xclip -i -selection clipboard
-URxvt.clipboard.pastecmd:      xclip -o -selection clipboard
-URxvt.keysym.Home:             \033[1~
-URxvt.keysym.End:              \033[4~
-URxvt.keysym.M-Escape:         perl:keyboard-select:activate
-URxvt.keysym.M-c:              perl:clipboard:copy
-URxvt.keysym.M-v:              perl:clipboard:paste
-URxvt.keysym.M-C-v:            perl:clipboard:paste_escaped
-URxvt.keysym.F11:              perl:fullscreen:switch
