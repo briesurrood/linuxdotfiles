@@ -1,7 +1,9 @@
-"{{{
+"Use & to run in background
+command! -nargs=1 Silent
+            \ | execute ':silent !'.<q-args>
+            \ | execute ':redraw!'
 
-"FZF Fuzzy File Searcher
-
+"FZF File Search Starts
 "#TODO Extend For CtrP With Word
 function! FZFExecute()
     " Remove trailing new line to make it work with tmux splits
@@ -13,13 +15,14 @@ function! FZFExecute()
     endif
 endfunction
 command! FZFExecute call FZFExecute()
-"CtrlP Ends
+"FZF File Search Ends
 
-"Grepping Using FZF #TODO File With :File: Name
+"Grepping Using FZF
 function! s:escape(path)
     return substitute(a:path, ' ', '\\ ', 'g')
 endfunction
 
+"#TODO Grep
 "Locate
 function! Locate(pattern)
     let pattern = expand(a:pattern)
@@ -28,13 +31,8 @@ function! Locate(pattern)
 endfunction
 command! -nargs=+ Locate call Locate('<args>')
 
-"}}}
-
-"{{{
-
-"#TODO Hacky Can Be Improved
+"#TODO Support Other Version Controls
 function! VersionControlOpen()
-    "#TODO Remove Hardcoding
     let directory = substitute(system('git rev-parse --show-toplevel'), '\n$', '', '')
     if !v:shell_error
         :Silent tig
@@ -45,20 +43,11 @@ endfunction
 command! VersionControlOpen call VersionControlOpen()
 
 function! FileExplorer()
-    "#TODO Fix GUI
-    :Silent urxvt -e vifm -c only
+    :Silent vifm
 endfunction
 command! FileExplorer call FileExplorer()
 
-
-"#TODO Extend For Other Languages OR Customize For Python Buffer
 function! IPythonExecute()
     :let ipython_file = expand("%:p")
     :Silent ipython -i %
 endfunction
-"Use & to run in background
-command! -nargs=1 Silent
-            \ | execute ':silent !'.<q-args>
-            \ | execute ':redraw!'
-
-"}}}
