@@ -14,7 +14,7 @@
 "---------------------------------------------------------------------------------
 
 hi Normal ctermfg=none  ctermbg=none cterm=none
-hi NonText ctermbg=none ctermfg=none cterm=none
+hi NonText ctermbg=none ctermfg=234 cterm=none
 hi ColorColumn ctermfg=none ctermbg=none cterm=none
 hi CursorLine ctermfg=none ctermbg=234 cterm=none
 hi LineNr  ctermfg=none ctermbg=none cterm=none
@@ -23,7 +23,7 @@ hi StatusLine ctermfg=none ctermbg=234 cterm=none
 hi StatusLineNC ctermfg=238 ctermbg=234 cterm=none
 hi Error ctermfg=none ctermbg=none cterm=none
 hi ErrorMsg ctermfg=231 ctermbg=none cterm=none
-hi VertSplit ctermfg=231 ctermbg=none cterm=none
+hi VertSplit ctermfg=234 ctermbg=234 cterm=none
 hi Visual ctermfg=none ctermbg=236 cterm=none
 hi Search ctermbg=17 ctermfg=15 cterm=none
 hi FoldColumn ctermbg=none
