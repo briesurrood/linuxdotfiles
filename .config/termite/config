@@ -1,11 +1,26 @@
 [options]
+
 font = DejaVu Sans Mono 9
+cursor_blink = system
+cursor_shape = block
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+scrollback_lines = 4096
+search_wrap = true
 
 [colors]
+
 background = #080808
 foreground = #eeeeee
 foreground_bold = #eeeeee
 cursor = #eeeeee
+
 
 #TODO: Implement Palette
 
