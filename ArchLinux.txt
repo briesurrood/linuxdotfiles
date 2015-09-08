@@ -29,7 +29,6 @@ gnome-keyring
 tmux
 tig
 termite
-sandy-git
 
 [Appearance]
 

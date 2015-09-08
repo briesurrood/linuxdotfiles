@@ -8,5 +8,5 @@ if [ -f /etc/bash_completion ]; then
      . /etc/bash_completion
 fi
 
-export EDITOR='sandy'
+export EDITOR='nano'
 export TERM='screen-256color'
