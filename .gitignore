@@ -3,7 +3,8 @@ Trash/
 .vim/bundle
 .vim/.netrwhist
 .vifm/vifminfo
-*.elc
+.config/tint2/*.tint2rc
+.config/tint2/*.jpg
 .emacs.d/elisp/ace-jump-mode/
 .emacs.d/elisp/circe/
 .emacs.d/elisp/emacs-async/
@@ -13,3 +14,4 @@ Trash/
 .emacs.d/elisp/evil/
 .emacs.d/elisp/helm/
 .emacs.d/elisp/god-mode
+*.elc

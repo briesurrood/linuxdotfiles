@@ -32,7 +32,7 @@ git_details[os.path.join(dotfiles_directory, ".emacs.d", "elisp")] = \
 
 ]
 
-git_details[os.path.join(dotfiles_directory, ".vim", "bundle")] = \
+git_details[os.path.join(home, ".vim", "bundle")] = \
     [
     "https://github.com/ctrlpvim/ctrlp.vim",
     "https://github.com/tpope/vim-surround",
