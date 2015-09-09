@@ -2,7 +2,7 @@ Dotfiles for a minimal Linux system
 
 - Distribution: Arch Linux
 - Shell: bash (zsh?)
-- Window Manager: i3wm (conky feh rofi dmenu) (bspwm?) xfce (Check ArchLinux.txt)
+- Window Manager: i3wm (conky feh rofi dmenu) (bspwm?) xfce (Check ArchLinux.txt) (openbox?)
 - Terminal Emulator: termite tmux
 - Emacs: emms plugins (Check ~/.emacs.d/init.el) - Drop?
 - Vim: fzf tig plugins (Check ~/.vimrc) (nvim?)

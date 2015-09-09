@@ -79,7 +79,6 @@
 "vat/dat/yat                 : For working with tag elements
 "<C-U>                       : Delete all entered
 "<C-W>                       : Delete last word
-"<HOME><END>                 : Beginning/end of line
 "<C-LEFTARROW><C-RIGHTARROW> : Jump one word backwards/forwards
 "<C-X><C-E>,<C-X><C-Y>       : Scroll while staying put in insert
 "<C-X><C-F>                  : Insert name of a file in current directory
@@ -92,7 +91,7 @@
 "<C-R>=somevar               : Pull contents of a variable (eg :let sray="ray[0-9]")
 ""ayy@a                      : Execute "Vim command" in a text file
 "yy@"                        : Same thing using unnamed register
-"u@.                         : Execute command JUST typed in
+"u@.                         : Execute command just typed in
 "ddw                         : Store what you delete in register d [N]
 "ccaw                        : Store what you change in register c [N]
 "zm                          : Fold one level , M for all levels , r R for opposite

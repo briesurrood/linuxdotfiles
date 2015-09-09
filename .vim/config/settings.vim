@@ -44,5 +44,5 @@ set foldlevel=2
 "Autocommands"
 
 "Remembers last edited position
-au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+au BufReadPost * if line("'\"")>0|if line("'\"")<=line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 au BufEnter * silent! lcd %:p:h

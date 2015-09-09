@@ -10,6 +10,7 @@ mouse_autohide = false
 allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
+browser = firefox
 clickable_url = true
 scrollback_lines = 4096
 search_wrap = true
@@ -20,7 +21,6 @@ background = #080808
 foreground = #eeeeee
 foreground_bold = #eeeeee
 cursor = #eeeeee
-
 
 #TODO: Implement Palette
 

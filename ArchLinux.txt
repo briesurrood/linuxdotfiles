@@ -80,3 +80,13 @@ Enable lightdm.service
 
 Disable netctl and Enable NetworkManager
 Enable Gnome Services during startup
+
+[R&D]
+
+Stuff here should be cleared.
+
+neovim
+openbox
+  - obconf
+  - nitrogen
+  - tint2

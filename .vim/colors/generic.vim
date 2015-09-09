@@ -14,7 +14,7 @@
 "---------------------------------------------------------------------------------
 
 hi Normal ctermfg=none  ctermbg=none cterm=none
-hi NonText ctermbg=none ctermfg=234 cterm=none
+hi NonText ctermfg=none ctermbg=none cterm=none
 hi ColorColumn ctermfg=none ctermbg=none cterm=none
 hi CursorLine ctermfg=none ctermbg=234 cterm=none
 hi LineNr  ctermfg=none ctermbg=none cterm=none
@@ -36,6 +36,7 @@ hi DiffDelete ctermbg=52 ctermfg=16 cterm=none
 hi DiffChange ctermbg=24 ctermfg=none cterm=none
 hi DiffText ctermbg=16 ctermfg=81 cterm=reverse
 hi ModeMsg cterm=none
+hi MatchParen cterm=none ctermbg=46 ctermfg=232
 
 "Syntax
 hi Comment ctermfg=240 ctermbg=none cterm=none
