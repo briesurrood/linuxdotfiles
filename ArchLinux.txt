@@ -15,8 +15,6 @@ grub-customizer
 
 [[Application]]
 
-xfce4
-xfce4-goodies
 lightdm
 lightdm-gtk-greeter
 firefox
@@ -30,30 +28,45 @@ tmux
 tig
 termite
 
+[Window Manager]
+
+lxappearance
+openbox
+  - feh
+  - obconf
+  - obmenu
+  - openbox-themes
+  - nitrogen
+  - xcompmgr
+  - transset-df
+  - alsa-utils
+  - volwheel
+  - nm-applet
+  - gnome-icon-theme
+  - gnome-icon-theme-extras
+  - archlinux-xdg-menu
+leafpad
+thunar
+  - gvfs
+  - gvfs-mtp
+  - gvfs-ntfs
+
 [Appearance]
 
 grub-customizer
-Theme: Xfce-flat
-Window: Aguamelon
+GTK Theme: Adwaita
+Window: TropicBomb
+Icon Theme: Gnome-Brave
 
 [Lock]
 
-dm-tool switch-to-greeter can be added to xflock4
+dm-tool switch-to-greeter can be used
 
 [INFO]
 
 Add desktop icon by plaing image into /usr/share/icons/hicolor/apps/XxX/ folder
 Run gtk-update-icon-cache
 Try `systemd-nspawn -bD /var/lib/lxc/centos` or its chroot equivalent
-
-[#TODO]
-
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
-URxvt.url-select.launcher:  chromium
-URxvt.url-select.underline: true
-URxvt.keysym.M-u:           perl:url-select:select_next
-URxvt.keysym.M-Escape:      perl:keyboard-select:activate
-URxvt.keysym.M-s:           perl:keyboard-select:search
 
 Zathura Icon
 
@@ -86,7 +99,20 @@ Enable Gnome Services during startup
 Stuff here should be cleared.
 
 neovim
-openbox
-  - obconf
-  - nitrogen
-  - tint2
+
+[FAQ]
+
+Sound is not working?
+
+For sound Use alsamixer and unmute the Master using m
+
+OpenBox Menu is not working?
+
+xdg_menu --format openbox3 --root-menu /etc/xdg/menus/arch-applications.menu > menu.xml
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/">
+<menu id="root-menu" label="Openbox 3">
+..
+..
+</menu>
+</openbox_menu>
