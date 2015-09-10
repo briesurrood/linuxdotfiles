@@ -19,7 +19,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>TropicBomb</name>
+    <name>Syscrash</name>
     <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
@@ -64,7 +64,11 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-</names>
+      <name>General</name>
+      <name>Terminal</name>
+      <name>Work</name>
+      <name>Miscellaneous</name>
+    </names>
     <popupTime>875</popupTime>
   </desktops>
   <resize>
@@ -239,9 +243,14 @@
         <command>termite</command>
       </action>
     </keybind>
-    <keybind key="C-A-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>dm-tool switch-to-greeter</command>
+      </action>
+    </keybind>
+    <keybind key="M-space">
+      <action name="Execute">
+        <command>rofi -show "window" -sidebar-mode</command>
       </action>
     </keybind>
   </keyboard>

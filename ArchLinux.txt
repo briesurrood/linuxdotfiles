@@ -32,6 +32,7 @@ termite
 
 lxappearance
 openbox
+  - dm-tool
   - feh
   - obconf
   - obmenu
@@ -50,6 +51,7 @@ thunar
   - gvfs
   - gvfs-mtp
   - gvfs-ntfs
+rofi
 
 [Appearance]
 
@@ -116,3 +118,12 @@ xdg_menu --format openbox3 --root-menu /etc/xdg/menus/arch-applications.menu > m
 ..
 </menu>
 </openbox_menu>
+
+
+JUNK
+
+pkgfile -vr utilities-terminal
+extra/adwaita-icon-theme 3.16.2.1-1  /usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png
+Install icon themes then. See what I did to find a few ^
+There's lots. That provide utilities-terminal
+pkgfile is a tool to find out what package owns a file, even if said package is not installed. pacman -S pkgfile; pkgfile -u
