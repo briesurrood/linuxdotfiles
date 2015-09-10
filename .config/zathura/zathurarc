@@ -2,15 +2,14 @@ set guioptions ""
 set window-title-basename false
 set statusbar-basename false
 set selection-clipboard clipboard
-set default-bg "#262626"
-set default-fg "#bcbcbc"
-set statusbar-bg "#262626"
-set statusbar-fg "#bcbcbc"
-set inputbar-bg "#262626"
+set default-bg "#ffffff"
+set default-fg "#000000"
+set statusbar-bg "#121212"
+set statusbar-fg "#eeeeee"
+set inputbar-bg "#121212"
 set inputbar-fg "#eeeeee"
 set recolor-darkcolor "#bcbcbc"
 set recolor-lightcolor "#262626"
-set recolor true
 
 map [normal]     <F11> toggle_fullscreen
 map [fullscreen] <F11> toggle_fullscreen

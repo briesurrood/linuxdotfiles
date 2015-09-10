@@ -20,20 +20,20 @@ Xft.hintstyle:                 hintfull
 Xft.dpi:                       96
 
 rofi.font:                     DejaVu Sans Mono 10
-rofi.fg:                       #eeeeee
+rofi.fg:                       #444444
 rofi.bg:                       #121212
 rofi.bgalt:                    #121212
 rofi.bg-urgent:                #fdf6e3
 rofi.bc:                       #121212
 rofi.fg-active:                #eeeeee
-rofi.bg-active:                #285577
+rofi.bg-active:                #222222
 rofi.fg-urgent:                #dc322f
 rofi.hlfg-active:              #ffffff
-rofi.hlbg-active:              #285577
+rofi.hlbg-active:              #222222
 rofi.hlbg-urgent:              #dc322f
 rofi.hlfg-urgent:              #fdf6e3
 rofi.hlfg:                     #ffffff
-rofi.hlbg:                     #285577
+rofi.hlbg:                     #222222
 
 Emacs.font:                    DejaVu Sans Mono-9
 Emacs.menuBar:                 off
