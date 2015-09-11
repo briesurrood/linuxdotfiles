@@ -77,7 +77,7 @@ Zathura Icon
 
 Check intel_set_pch_fifo_underrun error during boot
 Lightdm errors lightdm --test-mode --debug
-Check why it won't work from tmux
+(Check why it won't work from tmux)
 
 
 [Usage]

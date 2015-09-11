@@ -67,7 +67,7 @@ highlight CmdLine ctermbg=none
 highlight Win ctermbg=none
 highlight ErrorMsg ctermbg=none
 highlight WildMenu ctermbg=none
-highlight CurrLine ctermbg=none ctermfg=none cterm=standout
+highlight CurrLine ctermbg=white ctermfg=black cterm=none
 
 
 " The FUSE_HOME directory will be used as a root dir for all FUSE mounts.
@@ -182,7 +182,7 @@ fileviewer *.mp3 mp3info
 " Video
 filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv
        \ {View using mplayer}
-       \ mplayer %f -softvol -softvol-max 1000 -nokeepaspect 2> /dev/null &,
+       \ mpv --keepaspect=no %f 2> /dev/null &,
        \ {View using smplayer}
        \ smplayer -add-to-playlist %f 2> /dev/null &,
 fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob

@@ -20,7 +20,7 @@ search_wrap = true
 background = #080808
 foreground = #ffffff
 foreground_bold = #eeeeee
-cursor = #eeeeee
+cursor = #ffffff
 
 # black
 color0  = #000000
