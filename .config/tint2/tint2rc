@@ -19,8 +19,8 @@ border_color = #191919 100
 # Background 4
 rounded = 0
 border_width = 0
-background_color = #ff2200 100
-border_color = #191919 100
+background_color = #cc0000 255
+border_color = #ccoooo 255
 
 # Panel
 panel_items = TSBC
