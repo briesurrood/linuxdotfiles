@@ -41,8 +41,10 @@ openbox
   - xcompmgr
   - transset-df
   - alsa-utils
+  - tint2
   - volwheel
   - nm-applet
+  - zenity
   - gnome-icon-theme
   - gnome-icon-theme-extras
   - archlinux-xdg-menu
