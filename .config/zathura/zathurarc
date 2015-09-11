@@ -12,6 +12,7 @@ set notification-fg "#eeeeee"
 set notification-bg "#121212"
 set recolor-darkcolor "#bcbcbc"
 set recolor-lightcolor "#262626"
+set window-icon ~/linuxdotfiles/.icons/zathura.png
 
 map [normal]     <F11> toggle_fullscreen
 map [fullscreen] <F11> toggle_fullscreen
