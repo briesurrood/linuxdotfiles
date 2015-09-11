@@ -20,7 +20,7 @@ Xft.hintstyle:                 hintfull
 Xft.dpi:                       96
 
 rofi.font:                     DejaVu Sans Mono 10
-rofi.fg:                       #444444
+rofi.fg:                       #eeeeee
 rofi.bg:                       #121212
 rofi.bgalt:                    #121212
 rofi.bg-urgent:                #fdf6e3

@@ -42,7 +42,8 @@ git_details[os.path.join(home, ".vim", "bundle")] = \
     "https://github.com/Lokaltog/vim-easymotion",
     "https://github.com/tmhedberg/matchit",
     "https://github.com/dahu/vimple",
-    "https://github.com/junegunn/fzf"
+    "https://github.com/junegunn/fzf",
+    "https://github.com/tpope/vim-repeat"
 ]
 
 

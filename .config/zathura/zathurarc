@@ -8,6 +8,8 @@ set statusbar-bg "#121212"
 set statusbar-fg "#eeeeee"
 set inputbar-bg "#121212"
 set inputbar-fg "#eeeeee"
+set notification-fg "#eeeeee"
+set notification-bg "#121212"
 set recolor-darkcolor "#bcbcbc"
 set recolor-lightcolor "#262626"
 

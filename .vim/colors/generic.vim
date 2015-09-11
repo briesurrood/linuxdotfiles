@@ -14,7 +14,7 @@
 "---------------------------------------------------------------------------------
 
 hi Normal ctermfg=none  ctermbg=none cterm=none
-hi NonText ctermfg=none ctermbg=none cterm=none
+hi NonText ctermfg=232 ctermbg=232 cterm=none
 hi ColorColumn ctermfg=none ctermbg=none cterm=none
 hi CursorLine ctermfg=none ctermbg=234 cterm=none
 hi LineNr  ctermfg=none ctermbg=none cterm=none
@@ -107,6 +107,7 @@ if g:color_brighten == 1
         hi Todo ctermbg=none ctermfg=none cterm=bold
         hi PreProc ctermfg=14
         hi Type ctermfg=47
+        hi String ctermfg=13
     elseif g:colors_name =='slate'
         hi Type ctermfg=112
         hi Include ctermfg=9
