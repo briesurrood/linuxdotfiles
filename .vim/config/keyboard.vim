@@ -1,3 +1,5 @@
+"General
+
 nnoremap j gj
 nnoremap <Down> gj
 nnoremap k gk
@@ -5,6 +7,8 @@ nnoremap <Up> gk
 nnoremap ; :
 nnoremap n nzz
 vnoremap ; :
+nnoremap <silent> [b :bp<CR>
+nnoremap <silent> ]b :bn<CR>
 "Quick Save - S is just cc
 nnoremap S <ESC>s
 nnoremap s :w<CR>
@@ -24,31 +28,27 @@ nnoremap ,t :tab ball<CR>
 nnoremap ,n :tabedit %<CR>
 nnoremap ,f :let @+=expand("%:p")<CR>
 nnoremap ,w :%s/\s\+$<CR>
-nnoremap <silent> [b :bp<CR>
-nnoremap <silent> ]b :bn<CR>
 "Repeat the last action on a visual block
 vnoremap . :normal .<CR>
 
 "Leader Keys
 
-
-noremap <Leader>b :CtrlPBuffer<CR>
-noremap <Leader>m :CtrlPMRUFiles<CR>
-noremap <Leader>t :CtrlPTag<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>m :CtrlPMRUFiles<CR>
+nnoremap <Leader>t :CtrlPTag<CR>
 nnoremap <Leader>F yiw:FZF -1 -q <C-R>"<CR>
 nnoremap <Leader>f :<C-U>FZFExecute<CR>
 nnoremap <Leader>g :<C-U>Grep<Space>
-nnoremap <Leader>l :<C-U>Locate<Space>
 nnoremap <Leader>v :<C-U>VersionControlOpen<CR>
 nnoremap <Leader>e :<C-U>FileExplorer<CR>
 nmap <Leader>t o<ESC>k
 nmap <Leader>T O<ESC>j
 "Juggling
-nnoremap <Leader><Up>   :move-2<CR>==
-nnoremap <Leader><Down> :move+<CR>==
-xnoremap <Leader><Up>   :move-2<CR>gv=gv
-xnoremap <Leader><Down> :move'>+<CR>gv=gv
-nnoremap <Leader><Left> "_yiw?\v\w+\_W+%#<CR>:s/\v(%#\w+)(\_W+)(\w+)/\3\2\1/<CR><C-o><C-l>
+nnoremap <Leader><Up>    :move-2<CR>==
+nnoremap <Leader><Down>  :move+<CR>==
+xnoremap <Leader><Up>    :move-2<CR>gv=gv
+xnoremap <Leader><Down>  :move'>+<CR>gv=gv
+nnoremap <Leader><Left>  "_yiw?\v\w+\_W+%#<CR>:s/\v(%#\w+)(\_W+)(\w+)/\3\2\1/<CR><C-o><C-l>
 nnoremap <Leader><Right> "_yiw:s/\v(%#\w+)(\_W+)(\w+)/\3\2\1/<CR><C-o>/\v\w+\_W+<CR><C-l>
 "Fast Rearch/Replace
 nnoremap <Leader>r :'{,'}s/\<<C-R>=expand('<cword>')<CR>\>/
@@ -57,15 +57,14 @@ map <Leader>a ggVG
 
 "Function Keys
 
-inoremap <F2> <C-O>:w<CR>
 map <F2> :ls<CR>:e #
 map <F5> :setlocal spell! spelllang=en_us<CR>
-nnoremap <F6> :UndotreeToggle<CR>
+map <F6> :UndotreeToggle<CR>
 map <silent> <F9> :Startify<CR>
 map <F10> :echo
-          \ 'hi<'.synIDattr(synID(line("."),col("."),1),"name")
-          \ .'>trans<'.synIDattr(synID(line("."),col("."),0),"name")
-          \ .'>lo<'.synIDattr(synIDtrans(synID(line("."),col("."),1)),"name").">"<CR>
+            \ 'hi<'.synIDattr(synID(line("."),col("."),1),"name")
+            \ .'>trans<'.synIDattr(synID(line("."),col("."),0),"name")
+            \ .'>lo<'.synIDattr(synIDtrans(synID(line("."),col("."),1)),"name").">"<CR>
 
 "Ctrl Keys
 

@@ -59,7 +59,7 @@ rofi
 
 grub-customizer
 GTK Theme: Adwaita
-Window: TropicBomb
+Window: 1977
 Icon Theme: Gnome-Brave
 Font: Cantarell
 
@@ -81,6 +81,9 @@ Check intel_set_pch_fifo_underrun error during boot
 Lightdm errors lightdm --test-mode --debug
 (Check why it won't work from tmux)
 
+[#TODO]
+
+Desktop Switcher and Conky like http://www.bunsenlabs.org
 
 [Usage]
 

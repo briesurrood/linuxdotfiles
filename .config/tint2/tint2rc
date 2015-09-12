@@ -1,12 +1,12 @@
 # Background 1
-rounded = 2
-border_width = 1
+rounded = 0
+border_width = 0
 background_color = #222222 100
 border_color = #333333 100
 
 # Background 2
-rounded = 1
-border_width = 1
+rounded = 0
+border_width = 0
 background_color = #333333 100
 border_color = #343434 100
 
@@ -24,7 +24,7 @@ border_color = #9d2933 100
 
 # Panel
 panel_items = TSBC
-panel_size = 100% 30
+panel_size = 100% 28
 panel_margin = 0 0
 panel_padding = 4 0 4
 panel_background_id = 1
@@ -82,7 +82,7 @@ mouse_right = none
 mouse_scroll_up = prev_task
 mouse_scroll_down = next_task
 
-# System tray (notification area)
+# System Tray (Notification Area)
 systray_padding = 4 0 2
 systray_background_id = 0
 systray_sort = ascending
@@ -103,34 +103,34 @@ launcher_tooltip = 1
 time1_format = %H:%M
 time2_format = %d %b
 time1_font = Sans Bold 8
-time1_timezone = 
-time2_timezone = 
+time1_timezone =
+time2_timezone =
 time2_font = Sans Bold 7
-clock_font_color = #ffffff 255
+clock_font_color = #ffffff 100
 clock_padding = 0 0
 clock_background_id = 0
-clock_tooltip = 
-clock_tooltip_timezone = 
+clock_tooltip =
+clock_tooltip_timezone =
 clock_lclick_command = zenity --calendar --text ""
 clock_rclick_command = orage
-clock_mclick_command = 
-clock_uwheel_command = 
-clock_dwheel_command = 
+clock_mclick_command =
+clock_uwheel_command =
+clock_dwheel_command =
 
 # Battery
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
 bat1_font = Sans Bold 8
 bat2_font = Sans Bold 7
-battery_font_color = #ffffff 255
+battery_font_color = #ffffff 100
 battery_padding = 1 0
 battery_background_id = 0
 battery_hide = 101
-battery_lclick_command = 
-battery_rclick_command = 
-battery_mclick_command = 
-battery_uwheel_command = 
-battery_dwheel_command = 
+battery_lclick_command =
+battery_rclick_command =
+battery_mclick_command =
+battery_uwheel_command =
+battery_dwheel_command =
 
 # Tooltip
 tooltip_show_timeout = 0.5

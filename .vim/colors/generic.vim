@@ -36,7 +36,7 @@ hi DiffDelete ctermbg=52 ctermfg=16 cterm=none
 hi DiffChange ctermbg=24 ctermfg=none cterm=none
 hi DiffText ctermbg=16 ctermfg=81 cterm=reverse
 hi ModeMsg cterm=none
-hi MatchParen cterm=none ctermbg=46 ctermfg=232
+hi MatchParen cterm=none ctermbg=190 ctermfg=16
 
 "Syntax
 hi Comment ctermfg=240 ctermbg=none cterm=none
