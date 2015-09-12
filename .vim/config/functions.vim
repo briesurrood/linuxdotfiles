@@ -1,8 +1,3 @@
-"Use & to run in background
-command! -nargs=1 Silent
-            \ | execute ':silent !'.<q-args>
-            \ | execute ':redraw!'
-
 function! s:escape(path)
     return substitute(a:path, ' ', '\\ ', 'g')
 endfunction
@@ -46,10 +41,8 @@ function! Start()
         return
     endif
 
-    " Start a new buffer ...
     enew
 
-    " ... and set some options for it
     setlocal
         \ bufhidden=wipe
         \ buftype=nofile
@@ -76,3 +69,8 @@ function! Start()
     nnoremap <buffer><silent> q :exit<CR>
 endfunction
 autocmd VimEnter * call Start()
+
+"Use & to run in background
+command! -nargs=1 Silent
+            \ | execute ':silent !'.<q-args>
+            \ | execute ':redraw!'

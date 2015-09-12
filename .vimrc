@@ -17,6 +17,9 @@
 "                            https://github.com/dahu/vimple
 "                            https://github.com/junegunn/fzf
 "
+"Experimental :              https://github.com/justinmk/vim-sneak
+"                            
+"
 "==========================Shortcut Menu=====================
 
 
