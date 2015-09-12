@@ -36,7 +36,6 @@ git_details[os.path.join(home, ".vim", "bundle")] = \
     [
     "https://github.com/ctrlpvim/ctrlp.vim",
     "https://github.com/tpope/vim-surround",
-    "https://github.com/mhinz/vim-startify",
     "https://github.com/mbbill/undotree",
     "https://github.com/xolox/vim-misc",
     "https://github.com/Lokaltog/vim-easymotion",

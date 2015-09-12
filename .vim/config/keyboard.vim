@@ -60,7 +60,6 @@ map <Leader>a ggVG
 map <F2> :ls<CR>:e #
 map <F5> :setlocal spell! spelllang=en_us<CR>
 map <F6> :UndotreeToggle<CR>
-map <silent> <F9> :Startify<CR>
 map <F10> :echo
             \ 'hi<'.synIDattr(synID(line("."),col("."),1),"name")
             \ .'>trans<'.synIDattr(synID(line("."),col("."),0),"name")
