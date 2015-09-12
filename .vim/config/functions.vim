@@ -3,10 +3,8 @@ command! -nargs=1 Silent
             \ | execute ':silent !'.<q-args>
             \ | execute ':redraw!'
 
-"FZF File Search Starts
 "#TODO Extend For CtrP With Word
 function! FZFExecute()
-    " Remove trailing new line to make it work with tmux splits
     let directory = substitute(system('git rev-parse --show-toplevel'), '\n$', '', '')
     if !v:shell_error
         call fzf#run({'sink': 'e', 'dir': directory})
@@ -15,15 +13,12 @@ function! FZFExecute()
     endif
 endfunction
 command! FZFExecute call FZFExecute()
-"FZF File Search Ends
 
-"Grepping Using FZF
 function! s:escape(path)
     return substitute(a:path, ' ', '\\ ', 'g')
 endfunction
 
 "#TODO Grep
-"Locate
 function! Locate(pattern)
     let pattern = expand(a:pattern)
     let command = 'locate "'.pattern.'"'
