@@ -20,7 +20,7 @@ icon_name = terminal
 
 background = #080808
 foreground = #ffffff
-foreground_bold = #eeeeee
+foreground_bold = #ffffff
 cursor = #ffffff
 
 # black

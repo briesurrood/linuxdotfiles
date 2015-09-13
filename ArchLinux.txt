@@ -5,6 +5,7 @@ A guide to setting up a minmal Arch Linux distribution with XFCE.
 [[Libraries]]
 
 ttf-dejavu
+ttf-symbola
 freetype2
 xorg
 xorg-driver
@@ -27,6 +28,7 @@ gnome-keyring
 tmux
 tig
 termite
+weechat
 
 [Window Manager]
 
@@ -90,6 +92,10 @@ Desktop Switcher and Conky like http://www.bunsenlabs.org
 [[Tmux]]
 
 Check how to use with Termite
+
+[[Weechat]]
+
+Install iset /script install iset.pl
 
 [[LightDM]]
 

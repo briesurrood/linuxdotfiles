@@ -248,7 +248,7 @@
         <command>dm-tool switch-to-greeter</command>
       </action>
     </keybind>
-    <keybind key="M-space">
+    <keybind key="W-q">
       <action name="Execute">
         <command>rofi -show "window" -sidebar-mode</command>
       </action>
