@@ -34,6 +34,8 @@ rofi.hlbg-urgent:              #dc322f
 rofi.hlfg-urgent:              #fdf6e3
 rofi.hlfg:                     #ffffff
 rofi.hlbg:                     #222222
+rofi.separator-style:          solid
+rofi.hide-scrollbar:           true
 
 Emacs.font:                    DejaVu Sans Mono-9
 Emacs.menuBar:                 off
