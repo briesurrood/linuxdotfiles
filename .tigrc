@@ -16,6 +16,7 @@ set main-view = date:relative author:full commit-title:yes,graph,refs
 # screen.
 bind generic J next
 bind generic K previous
+bind status P !git push origin
 
 # COLORS
 
