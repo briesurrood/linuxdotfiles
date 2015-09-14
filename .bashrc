@@ -9,4 +9,3 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 export EDITOR='vim'
-export TERM='screen-256color'
