@@ -18,4 +18,3 @@ Extras:
 
 System Dependencies
 mercurial git xclip xsel wmctrl
-

@@ -80,8 +80,9 @@ Zathura Icon
 [#FIXME]
 
 Check intel_set_pch_fifo_underrun error during boot
-Lightdm errors lightdm --test-mode --debug
-(Check why it won't work from tmux)
+Lightdm errors lightdm --test-mode --debug (Check why it won't work from tmux)
+Multiple URL's wont work in Tmux
+Border for Windows?
 
 [#TODO]
 
