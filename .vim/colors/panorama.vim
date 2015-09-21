@@ -51,7 +51,7 @@ hi DiffDelete     cterm=none       ctermfg=16    ctermbg=52
 hi DiffChange     cterm=none       ctermfg=none  ctermbg=24
 hi DiffText       cterm=reverse    ctermfg=81    ctermbg=16
 hi ModeMsg        cterm=none
-hi NonText        cterm=none       ctermfg=235   ctermbg=none
+hi NonText        cterm=none       ctermfg=232   ctermbg=none
 hi Directory      cterm=none       ctermfg=45    ctermbg=none
 hi IncSearch      cterm=reverse    ctermfg=none
 hi MoreMsg        cterm=none       ctermfg=none
@@ -60,7 +60,7 @@ hi LineNr         cterm=none       ctermfg=102   ctermbg=none
 hi SignColumn     cterm=none       ctermfg=102   ctermbg=none
 hi Question       cterm=none       ctermfg=208   ctermbg=none
 hi VertSplit      cterm=none       ctermfg=none
-hi CursorLine     cterm=underline  ctermfg=231   ctermbg=none
+hi CursorLine     cterm=none       ctermfg=none  ctermbg=234
 hi VisualNOS      cterm=none       ctermfg=none
 hi WarningMsg     cterm=standout   ctermfg=none
 hi WildMenu       cterm=standout   ctermfg=none  ctermbg=none

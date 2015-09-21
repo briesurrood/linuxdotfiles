@@ -13,6 +13,7 @@ networkmanager
 xorg-fonts-75dpi (Remove)
 xorg-fonts-100dpi (Remove)
 grub-customizer
+pinfo
 
 [[Application]]
 
@@ -46,6 +47,7 @@ openbox
   - tint2
   - volwheel
   - nm-applet
+  - python2-xdg
   - zenity
   - gnome-icon-theme
   - gnome-icon-theme-extras
@@ -61,7 +63,7 @@ rofi
 
 grub-customizer
 GTK Theme: Adwaita
-Window: 1977
+Window: 1977 (Border window.active.border.color: #555555)
 Icon Theme: Gnome-Brave
 Font: Cantarell
 
@@ -82,7 +84,6 @@ Zathura Icon
 Check intel_set_pch_fifo_underrun error during boot
 Lightdm errors lightdm --test-mode --debug (Check why it won't work from tmux)
 Multiple URL's wont work in Tmux
-Border for Windows?
 
 [#TODO]
 
@@ -114,6 +115,8 @@ Enable Gnome Services during startup
 Stuff here should be cleared.
 
 neovim
+bspwm
+weechat
 
 [FAQ]
 

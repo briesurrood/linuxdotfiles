@@ -43,30 +43,8 @@ function! Start()
 
     enew
 
-    setlocal
-        \ bufhidden=wipe
-        \ buftype=nofile
-        \ nobuflisted
-        \ nocursorcolumn
-        \ nocursorline
-        \ nolist
-        \ nonumber
-        \ noswapfile
-        \ norelativenumber
+    e Scratch.txt
 
-    " Now we can just write to the buffer, whatever you want.
-    call append('', "Welcome To Vim")
-    call append('$', "e: Scratch")
-    call append('$', "r: Recent Files")
-    call append('$', "q: Quit")
-
-    " No modifications to this buffer
-    setlocal nomodifiable nomodified
-
-    " When we go to insert mode start a new buffer, and start insert
-    nnoremap <buffer><silent> e :e ~/Scratch.txt<CR>
-    nnoremap <buffer><silent> r :CtrlPMRUFiles<CR>
-    nnoremap <buffer><silent> q :exit<CR>
 endfunction
 autocmd VimEnter * call Start()
 

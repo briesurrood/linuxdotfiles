@@ -242,11 +242,12 @@ hi link diffRemoved        WarningMsg
 hi link diffAdded          String
 
 "My Customizations
+hi NonText ctermbg=235 ctermfg=235
 hi StatusLine ctermbg=102 ctermfg=16
 hi StatusLineNC ctermbg=238 ctermfg=234
 hi ColorColumn ctermbg=236
-hi! link Constant String
 hi Special ctermfg=109
+hi! link Constant String
 
 "CtrlP
 hi link CtrlPMatch Normal

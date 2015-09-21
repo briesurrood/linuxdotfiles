@@ -176,7 +176,7 @@ filetype *.djvu zathura %f 2> /dev/null &
 " Audio
 filetype *.wav,*.mp3,*.flac,*.ogg,*.m4a
        \ {Play using Audacious}
-       \ mpv %f 2> /dev/null &,
+       \ mpv --profile=pseudo-gui %f 2> /dev/null &,
 fileviewer *.mp3 mp3info
 
 " Video

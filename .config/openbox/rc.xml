@@ -248,9 +248,41 @@
         <command>dm-tool switch-to-greeter</command>
       </action>
     </keybind>
-    <keybind key="W-q">
+    <keybind key="W-BackSpace">
       <action name="Execute">
-        <command>rofi -show "run"</command>
+        <command>rofi -show "window"</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-c">
+      <action name="Reconfigure">
+      </action>
+    </keybind>
+    <keybind key="C-A-r">
+      <action name="Restart">
+      </action>
+    </keybind>
+    <keybind key="C-A-e">
+      <action name="Exit">
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="DesktopRight">
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="DesktopLeft">
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-W-Left">
+      <action name="SendToDesktopLeft">
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-W-Right">
+      <action name="SendToDesktopRight">
+        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">

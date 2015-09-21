@@ -3,7 +3,7 @@
 filetype plugin on
 filetype indent on
 "Use System Clipboard
-set clipboard=unnamedplus,unnamed,exclude:cons\|linux
+set encoding=utf-8
 set syntax=on
 set t_Co=256
 set ruler
@@ -40,6 +40,7 @@ set foldmethod=indent
 set foldnestmax=2
 set nofoldenable
 set foldlevel=2
+set clipboard=unnamedplus,unnamed,exclude:cons\|linux
 
 "Autocommands"
 
