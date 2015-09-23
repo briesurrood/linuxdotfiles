@@ -1,6 +1,6 @@
 # Background 1
 rounded = 0
-border_width = 0
+border_width = 1
 background_color = #222222 100
 border_color = #333333 100
 
