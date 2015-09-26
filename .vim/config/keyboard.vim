@@ -41,6 +41,7 @@ nnoremap <Leader>f :<C-U>FZFExecute<CR>
 nnoremap <Leader>g :<C-U>Grep<Space>
 nnoremap <Leader>v :<C-U>VersionControlOpen<CR>
 nnoremap <Leader>e :<C-U>FileExplorer<CR>
+nnoremap <Leader>c :!clear<CR>
 nmap <Leader>t o<ESC>k
 nmap <Leader>T O<ESC>j
 "Juggling
