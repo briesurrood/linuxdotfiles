@@ -71,11 +71,11 @@ hi String         cterm=none       ctermfg=120
 hi Number         cterm=none       ctermfg=201
 hi PreProc        cterm=none       ctermfg=51
 hi Constant       cterm=none       ctermfg=201
-hi Special        cterm=none       ctermfg=196   ctermbg=none
+hi Special        cterm=none       ctermfg=201   ctermbg=none
 hi Statement      cterm=none       ctermfg=47
 hi Type           cterm=none       ctermfg=190
 hi Title          cterm=none       ctermfg=214
-hi Identifier     cterm=none       ctermfg=197
+hi Identifier     cterm=none       ctermfg=201
 hi Underlined     cterm=none       ctermfg=none
 hi Ignore         cterm=none       ctermfg=none
 hi Todo           cterm=bold       ctermfg=none  ctermbg=none

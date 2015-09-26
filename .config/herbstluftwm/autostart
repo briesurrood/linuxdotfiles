@@ -26,6 +26,7 @@ hc keybind $Mod-Return spawn termite
 hc keybind $Mod-d spawn dmenu_run
 hc keybind $Mod-w spawn rofi -show "window"
 
+
 # basic movement
 # focusing clients
 hc keybind $Mod-Left  focus left
@@ -126,7 +127,7 @@ hc attr theme.floating.border_width 1
 hc attr theme.floating.outer_width 1
 hc attr theme.floating.outer_color white
 hc attr theme.active.inner_color '#285577'
-hc attr theme.active.outer_color '#ff0000'
+hc attr theme.active.outer_color '#285577'
 hc attr theme.background_color '#262626'
 
 hc set window_gap 0
