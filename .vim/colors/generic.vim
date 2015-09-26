@@ -39,7 +39,7 @@ hi ModeMsg cterm=none
 hi MatchParen cterm=none ctermbg=190 ctermfg=16
 
 "Syntax
-hi Comment ctermfg=240 ctermbg=none cterm=none
+hi Comment ctermfg=238 ctermbg=none cterm=none
 hi Identifier cterm=none
 hi Title cterm=none
 hi Statement cterm=none

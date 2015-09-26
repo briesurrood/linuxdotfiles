@@ -38,7 +38,7 @@ hi StatusLine     cterm=none       ctermfg=231   ctermbg=234
 hi StatusLineNC   cterm=none       ctermfg=238   ctermbg=234
 hi Error          cterm=none       ctermfg=none  ctermbg=none
 hi ErrorMsg       cterm=none       ctermfg=none  ctermbg=none
-hi VertSplit      cterm=none       ctermfg=231   ctermbg=none
+hi VertSplit      cterm=none       ctermfg=235   ctermbg=235
 hi Visual         cterm=none       ctermfg=none  ctermbg=235
 hi Search         cterm=none       ctermfg=231   ctermbg=17
 hi FoldColumn     cterm=none       ctermbg=none
@@ -58,8 +58,7 @@ hi MoreMsg        cterm=none       ctermfg=none
 hi ModeMsg        cterm=none       ctermfg=none
 hi LineNr         cterm=none       ctermfg=102   ctermbg=none
 hi SignColumn     cterm=none       ctermfg=102   ctermbg=none
-hi Question       cterm=none       ctermfg=208   ctermbg=none
-hi VertSplit      cterm=none       ctermfg=none
+hi Question       cterm=none       ctermfg=214   ctermbg=none
 hi CursorLine     cterm=none       ctermfg=none  ctermbg=234
 hi VisualNOS      cterm=none       ctermfg=none
 hi WarningMsg     cterm=standout   ctermfg=none
@@ -68,15 +67,15 @@ hi Folded         cterm=none       ctermfg=102   ctermbg=237
 hi Comment        cterm=none       ctermfg=238
 hi Operator       cterm=none       ctermfg=154
 hi Function       cterm=none       ctermfg=214
-hi String         cterm=none       ctermfg=45
-hi Number         cterm=none       ctermfg=165
-hi PreProc        cterm=none       ctermfg=45
-hi Constant       cterm=none       ctermfg=45
-hi Special        cterm=none       ctermfg=197   ctermbg=none
-hi Statement      cterm=none       ctermfg=118
-hi Type           cterm=none       ctermfg=49
-hi Title          cterm=none       ctermfg=208
-hi Identifier     cterm=none       ctermfg=49
+hi String         cterm=none       ctermfg=120
+hi Number         cterm=none       ctermfg=201
+hi PreProc        cterm=none       ctermfg=51
+hi Constant       cterm=none       ctermfg=201
+hi Special        cterm=none       ctermfg=196   ctermbg=none
+hi Statement      cterm=none       ctermfg=47
+hi Type           cterm=none       ctermfg=190
+hi Title          cterm=none       ctermfg=214
+hi Identifier     cterm=none       ctermfg=197
 hi Underlined     cterm=none       ctermfg=none
 hi Ignore         cterm=none       ctermfg=none
 hi Todo           cterm=bold       ctermfg=none  ctermbg=none
