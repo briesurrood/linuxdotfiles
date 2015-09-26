@@ -19,7 +19,7 @@ Xft.hinting:                   true
 Xft.hintstyle:                 hintfull
 Xft.dpi:                       96
 
-rofi.font:                     Terminus 9
+rofi.font:                     Terminus 8
 rofi.fg:                       #ffffff
 rofi.bg:                       #121212
 rofi.bgalt:                    #121212
@@ -29,11 +29,11 @@ rofi.fg-active:                #ffffff
 rofi.bg-active:                #222222
 rofi.fg-urgent:                #dc322f
 rofi.hlfg-active:              #ffffff
-rofi.hlbg-active:              #222222
+rofi.hlbg-active:              #af0000
 rofi.hlbg-urgent:              #dc322f
 rofi.hlfg-urgent:              #fdf6e3
 rofi.hlfg:                     #ffffff
-rofi.hlbg:                     #222222
+rofi.hlbg:                     #285577
 rofi.separator-style:          solid
 rofi.hide-scrollbar:           true
 

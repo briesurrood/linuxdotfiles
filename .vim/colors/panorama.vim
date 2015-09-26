@@ -67,7 +67,7 @@ hi Folded         cterm=none       ctermfg=102   ctermbg=237
 hi Comment        cterm=none       ctermfg=238
 hi Operator       cterm=none       ctermfg=154
 hi Function       cterm=none       ctermfg=214
-hi String         cterm=none       ctermfg=120
+hi String         cterm=none       ctermfg=47
 hi Number         cterm=none       ctermfg=201
 hi PreProc        cterm=none       ctermfg=51
 hi Constant       cterm=none       ctermfg=201
