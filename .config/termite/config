@@ -6,7 +6,7 @@ cursor_shape = block
 scroll_on_output = false
 scroll_on_keystroke = true
 audible_bell = false
-mouse_autohide = false
+mouse_autohide = true
 allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
@@ -36,8 +36,8 @@ color10 = #00ff00
 color3  = #ffff00
 color11 = #ffff00
 # blue
-color4  = #008fff
-color12 = #008fff
+color4  = #0000ff
+color12 = #000off
 # magenta
 color5  = #ff00ff
 color13 = #ff00ff
