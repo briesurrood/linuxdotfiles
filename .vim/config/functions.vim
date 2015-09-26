@@ -6,7 +6,7 @@ endfunction
 function! FZFExecute()
     let directory = substitute(system('git rev-parse --show-toplevel'), '\n$', '', '')
     if !v:shell_error
-        call fzf#run({'source': 'ls -ar', 'sink': 'e', 'dir': directory})
+        call fzf#run({'source': 'git ls-files', 'sink': 'e', 'dir': directory})
     else
         FZF
     endif

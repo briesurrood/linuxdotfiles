@@ -25,7 +25,7 @@ hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn termite
 hc keybind $Mod-d spawn dmenu_run
 hc keybind $Mod-w spawn rofi -show "window"
-
+hc keybind $Mod-b spawn dm-tool switch-to-greeter
 
 # basic movement
 # focusing clients

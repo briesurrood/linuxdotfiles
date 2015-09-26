@@ -29,7 +29,7 @@ rofi.fg-active:                #ffffff
 rofi.bg-active:                #222222
 rofi.fg-urgent:                #dc322f
 rofi.hlfg-active:              #ffffff
-rofi.hlbg-active:              #af0000
+rofi.hlbg-active:              #3e4a00
 rofi.hlbg-urgent:              #dc322f
 rofi.hlfg-urgent:              #fdf6e3
 rofi.hlfg:                     #ffffff
