@@ -134,3 +134,10 @@ xdg_menu --format openbox3 --root-menu /etc/xdg/menus/arch-applications.menu > m
 ..
 </menu>
 </openbox_menu>
+
+Setting Up herbstluftwm
+
+Battery Indicator
+Network Connector
+arandr
+100% Mouse Compatibility
