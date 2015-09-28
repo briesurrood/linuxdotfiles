@@ -14,7 +14,7 @@
 "---------------------------------------------------------------------------------
 
 hi Normal ctermfg=none  ctermbg=none cterm=none
-hi NonText ctermfg=232 ctermbg=232 cterm=none
+hi NonText ctermfg=234 ctermbg=none cterm=none
 hi ColorColumn ctermfg=none ctermbg=none cterm=none
 hi CursorLine ctermfg=none ctermbg=234 cterm=none
 hi LineNr  ctermfg=none ctermbg=none cterm=none

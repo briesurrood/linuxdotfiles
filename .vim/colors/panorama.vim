@@ -38,7 +38,7 @@ hi StatusLine     cterm=none       ctermfg=231   ctermbg=234
 hi StatusLineNC   cterm=none       ctermfg=238   ctermbg=234
 hi Error          cterm=none       ctermfg=none  ctermbg=none
 hi ErrorMsg       cterm=none       ctermfg=none  ctermbg=none
-hi VertSplit      cterm=none       ctermfg=235   ctermbg=235
+hi VertSplit      cterm=none       ctermfg=234   ctermbg=234
 hi Visual         cterm=none       ctermfg=none  ctermbg=235
 hi Search         cterm=none       ctermfg=231   ctermbg=17
 hi FoldColumn     cterm=none       ctermbg=none
