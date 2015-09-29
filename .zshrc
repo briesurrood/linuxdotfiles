@@ -7,3 +7,4 @@ zstyle :compinstall filename '/home/nishant/.zshrc'
 zstyle ':completion:*' menu select
 autoload -Uz compinit
 compinit
+export EDITOR=nvi
