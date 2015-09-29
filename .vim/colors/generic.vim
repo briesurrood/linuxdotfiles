@@ -106,7 +106,6 @@ if g:color_brighten == 1
     elseif g:colors_name == 'ron'
         hi Todo ctermbg=none ctermfg=none cterm=bold
         hi PreProc ctermfg=14
-        hi Type ctermfg=47
         hi String ctermfg=13
     elseif g:colors_name =='slate'
         hi Type ctermfg=112

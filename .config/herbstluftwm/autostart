@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # this is a simple config for herbstluftwm
 
@@ -8,11 +8,10 @@ hc() {
 
 hc emit_hook reload
 
-xset -b
 xsetroot -solid '#121212'
 feh --bg-scale ~/linuxdotfiles/.wallpapers/Arch-Gradient.png
-# TODO: Required?
 xcompmgr &
+rofi -fuzzy -key-run F2 -key-window F3 &
 
 # remove all existing keybindings
 hc keyunbind --all
@@ -27,8 +26,8 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn termite
 hc keybind $Mod-d spawn dmenu_run
-hc keybind $Mod-w spawn rofi -show "window"
 hc keybind $Mod-b spawn dm-tool switch-to-greeter
+hc keybind $Mod-z spawn systemctl suspend
 
 # basic movement
 # focusing clients
@@ -89,10 +88,16 @@ hc keybind $Mod-comma  use_index -1 --skip-visible
 
 # layouting
 hc keybind $Mod-r remove
-hc keybind $Mod-space cycle_layout 1
 hc keybind $Mod-s floating toggle
 hc keybind $Mod-f fullscreen toggle
 hc keybind $Mod-p pseudotile toggle
+# The following cycles through the available layouts within a frame, but skips
+# layouts, if the layout change wouldn't affect the actual window positions.
+# I.e. if there are two windows within a frame, the grid layout is skipped.
+hc keybind $Mod-space                                                           \
+            or , and . compare tags.focus.curframe_wcount = 2                   \
+                     . cycle_layout +1 vertical horizontal max vertical grid    \
+               , cycle_layout +1
 
 # mouse
 hc mouseunbind --all
@@ -112,8 +117,8 @@ hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
 hc set frame_border_active_color '#222222'
 hc set frame_border_normal_color '#262626'
-hc set frame_bg_active_color '#222222'
 hc set frame_bg_normal_color '#161616'
+hc set frame_bg_active_color '#222222'
 hc set frame_border_width 1
 hc set always_show_frame 1
 hc set frame_bg_transparent 1
@@ -138,6 +143,9 @@ hc set frame_padding 0
 hc set smart_window_surroundings 0
 hc set smart_frame_surroundings 1
 hc set mouse_recenter_gap 0
+hc set focus_follows_mouse 1
+hc set raise_on_click 1
+hc set raise_on_focus 0
 
 # rules
 hc unrule -F
@@ -153,9 +161,8 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 # unlock, just to be sure
 hc unlock
 
-# general
-herbstclient set update_dragged_clients 0
 herbstclient set tree_style '╾│ ├└╼─┐'
+herbstclient set update_dragged_clients 0
 
 # do multi monitor setup here, e.g.:
 # hc set_monitors 1280x1024+0+0 1280x1024+1280+0

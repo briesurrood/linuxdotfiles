@@ -51,7 +51,7 @@ hi DiffDelete     cterm=none       ctermfg=16    ctermbg=52
 hi DiffChange     cterm=none       ctermfg=none  ctermbg=24
 hi DiffText       cterm=reverse    ctermfg=81    ctermbg=16
 hi ModeMsg        cterm=none
-hi NonText        cterm=none       ctermfg=232   ctermbg=none
+hi NonText        cterm=none       ctermfg=234   ctermbg=none
 hi Directory      cterm=none       ctermfg=45    ctermbg=none
 hi IncSearch      cterm=reverse    ctermfg=none
 hi MoreMsg        cterm=none       ctermfg=none

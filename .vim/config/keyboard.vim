@@ -58,9 +58,9 @@ map <Leader>a ggVG
 
 "Function Keys
 
-map <F2> :ls<CR>:e #
 map <F5> :setlocal spell! spelllang=en_us<CR>
 map <F6> :UndotreeToggle<CR>
+map <F7> :ls<CR>:e #
 map <F10> :echo
             \ 'hi<'.synIDattr(synID(line("."),col("."),1),"name")
             \ .'>trans<'.synIDattr(synID(line("."),col("."),0),"name")

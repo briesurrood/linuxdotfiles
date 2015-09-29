@@ -30,6 +30,7 @@ tmux
 tig
 termite
 weechat
+ed
 
 [Window Manager]
 
@@ -123,6 +124,9 @@ herbstluftwm
 - Network Connector
 - arandr
 - 100% Mouse Compatibility
+
+rofi
+ - Check daemon mode
 
 [FAQ]
 

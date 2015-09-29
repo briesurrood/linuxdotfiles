@@ -72,4 +72,4 @@ hi! link NonText        LineNr
 
 " vim:set ts=4 sw=4 noet:
 " My Customizations
-hi NonText ctermbg=none
+hi NonText ctermbg=none ctermfg=244

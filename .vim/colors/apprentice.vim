@@ -242,7 +242,7 @@ hi link diffRemoved        WarningMsg
 hi link diffAdded          String
 
 "My Customizations
-hi NonText ctermbg=235 ctermfg=235
+hi NonText ctermfg=237
 hi StatusLine ctermbg=102 ctermfg=16
 hi StatusLineNC ctermbg=238 ctermfg=234
 hi ColorColumn ctermbg=236
