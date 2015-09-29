@@ -31,7 +31,6 @@ tig
 termite
 weechat
 ed
-nvi
 
 [Window Manager]
 
