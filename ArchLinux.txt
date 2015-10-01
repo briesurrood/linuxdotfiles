@@ -89,6 +89,7 @@ Multiple URL's wont work in Tmux
 [#TODO]
 
 Desktop Switcher and Conky like http://www.bunsenlabs.org
+Add Zsh Mode in Termite/Tmux
 
 [Usage]
 

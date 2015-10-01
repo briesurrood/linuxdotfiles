@@ -67,12 +67,12 @@ hi Folded         cterm=none       ctermfg=102   ctermbg=237
 hi Comment        cterm=none       ctermfg=238
 hi Operator       cterm=none       ctermfg=154
 hi Function       cterm=none       ctermfg=214
-hi String         cterm=none       ctermfg=47
+hi String         cterm=none       ctermfg=46
 hi Number         cterm=none       ctermfg=201
-hi PreProc        cterm=none       ctermfg=51
+hi PreProc        cterm=none       ctermfg=50
 hi Constant       cterm=none       ctermfg=201
 hi Special        cterm=none       ctermfg=201   ctermbg=none
-hi Statement      cterm=none       ctermfg=47
+hi Statement      cterm=none       ctermfg=46
 hi Type           cterm=none       ctermfg=190
 hi Title          cterm=none       ctermfg=214
 hi Identifier     cterm=none       ctermfg=201
