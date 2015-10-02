@@ -1,8 +1,11 @@
-A guide to setting up a minmal Arch Linux distribution with XFCE.
+A guide to setting up a minmal Arch Linux distribution with Openbox and
+bspwm/herbstluftwm
 
-[Installation]
+Installation
+____________
 
-[[Libraries]]
+Libraries
+___________
 
 ttf-dejavu
 ttf-symbola
@@ -15,7 +18,8 @@ xorg-fonts-100dpi (Remove)
 grub-customizer
 pinfo
 
-[[Application]]
+Application
+_____________
 
 lightdm
 lightdm-gtk-greeter
@@ -32,7 +36,8 @@ termite
 weechat
 ed
 
-[Window Manager]
+Window Manager
+______________
 
 lxappearance
 openbox
@@ -60,59 +65,50 @@ thunar
   - gvfs-ntfs
 rofi
 
-[Appearance]
+Window Manager
+______________
 
 grub-customizer
+Install Light DM
+    Enable lightdm.service
+    /etc/lightdm/lightdm.conf should have greeter-session=lightdm-gtk-greeter
+    /etc/lightdm/lightdm-gtk-greeter.conf to change background image
 GTK Theme: Adwaita
-Window: 1977 (Border window.active.border.color: #555555)
+Openbox Window: 1977 (Border window.active.border.color: #555555)
 Icon Theme: Gnome-Brave
-Font: Cantarell
+dm-tool switch-to-greeter can be used to lock
+Disable netctl and Enable NetworkManager
+Enable Gnome Services during startup
 
-[Lock]
+INFO
+____
 
-dm-tool switch-to-greeter can be used
-
-[INFO]
-
-Add desktop icon by plaing image into /usr/share/icons/hicolor/apps/XxX/ folder
-Run gtk-update-icon-cache
 Try `systemd-nspawn -bD /var/lib/lxc/centos` or its chroot equivalent
 
-Zathura Icon
-
-[#FIXME]
+#FIXME
+______
 
 Check intel_set_pch_fifo_underrun error during boot
 Lightdm errors lightdm --test-mode --debug (Check why it won't work from tmux)
 Multiple URL's wont work in Tmux
 
-[#TODO]
+#TODO
+_____
 
 Desktop Switcher and Conky like http://www.bunsenlabs.org
 Add Zsh Mode in Termite/Tmux
 
-[Usage]
 
-[[Tmux]]
+Application
+___________
 
-Check how to use with Termite
-
-[[Weechat]]
+Weechat
+_______
 
 Install iset /script install iset.pl
 
-[[LightDM]]
-
-Enable lightdm.service
-/etc/lightdm/lightdm.conf should have greeter-session=lightdm-gtk-greeter
-/etc/lightdm/lightdm-gtk-greeter.conf to change background image
-
-[[NetworkManager]]
-
-Disable netctl and Enable NetworkManager
-Enable Gnome Services during startup
-
-[R&D]
+R&D
+___
 
 Stuff here should be cleared.
 
@@ -126,10 +122,8 @@ herbstluftwm
 - arandr
 - 100% Mouse Compatibility
 
-rofi
- - Check daemon mode
-
-[FAQ]
+FAQ
+___
 
 Sound is not working?
 
@@ -145,3 +139,9 @@ xdg_menu --format openbox3 --root-menu /etc/xdg/menus/arch-applications.menu > m
 ..
 </menu>
 </openbox_menu>
+
+Links
+_____
+
+https://github.com/eiro/rcfiles/
+https://color.adobe.com/

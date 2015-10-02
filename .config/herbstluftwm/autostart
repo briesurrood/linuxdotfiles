@@ -8,10 +8,8 @@ hc() {
 
 hc emit_hook reload
 
-xsetroot -solid '#121212'
 feh --bg-scale ~/linuxdotfiles/.wallpapers/Arch-Gradient.png
-xcompmgr &
-rofi -fuzzy -key-run F2 -key-window F3 &
+xsetroot -solid '#121212'
 
 # remove all existing keybindings
 hc keyunbind --all
@@ -133,8 +131,8 @@ hc attr theme.inner_color '#ffffff'
 hc attr theme.border_width 1
 hc attr theme.floating.border_width 1
 hc attr theme.floating.outer_width 1
-hc attr theme.floating.outer_color '#ffffff'
-hc attr theme.active.inner_color '#ff0000'
+hc attr theme.floating.outer_color '#285577'
+hc attr theme.active.inner_color '#285577'
 hc attr theme.active.outer_color '#ffffff'
 hc attr theme.background_color '#262626'
 
@@ -176,3 +174,7 @@ for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
     # start it on each monitor
     "$panel" $monitor &
 done
+
+# programs
+xcompmgr &
+rofi -fuzzy -key-run F2 -key-window F3 &

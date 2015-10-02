@@ -18,7 +18,3 @@ Extras:
 
 System Dependencies
 mercurial git xclip xsel wmctrl
-
-Links:
-
-- https://color.adobe.com/

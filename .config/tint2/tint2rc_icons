@@ -25,7 +25,7 @@ border_color = #9d2933 100
 
 # Panel
 panel_items = TSBC
-panel_size = 100% 64
+panel_size = 100% 48
 panel_margin = 0 0
 panel_padding = 4 0 4
 panel_background_id = 1
@@ -37,7 +37,7 @@ panel_monitor = all
 autohide = 1
 autohide_show_timeout = 0
 autohide_hide_timeout = 0.5
-autohide_height = 2
+autohide_height = 0
 strut_policy = follow_size
 panel_window_name = tint2
 disable_transparency = 0
@@ -66,7 +66,7 @@ task_text = 0
 task_icon = 1
 task_centered = 0
 urgent_nb_of_blink = 1000000
-task_maximum_size = 64 256
+task_maximum_size = 48 256
 task_padding = 2 2 2
 task_font = Sans Bold 12
 task_tooltip = 1
