@@ -121,7 +121,7 @@ herbstluftwm
 - arandr
 - 100% Mouse Compatibility
 vimb
-bspwm - Fix panels
+bspwm - Try dzen2
 zsh/termie/tmux - Fix Home End
 
 FAQ
