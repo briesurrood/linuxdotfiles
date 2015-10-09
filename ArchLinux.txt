@@ -113,7 +113,6 @@ ___
 Stuff here should be cleared.
 
 neovim
-bspwm
 weechat
 - Backup
 herbstluftwm
@@ -121,6 +120,9 @@ herbstluftwm
 - Network Connector
 - arandr
 - 100% Mouse Compatibility
+vimb
+bspwm - Fix panels
+zsh/termie/tmux - Fix Home End
 
 FAQ
 ___
@@ -145,3 +147,4 @@ _____
 
 https://github.com/eiro/rcfiles/
 https://color.adobe.com/
+http://thedarnedestthing.com/

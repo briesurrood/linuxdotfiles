@@ -6,10 +6,6 @@ syntax on
 filetype plugin indent on
 set shiftwidth=4
 
-"Netrw
-
-let g:netrw_liststyle=3
-
 "Python-Mode
 
 let g:pymode_rope_lookup_project = 1

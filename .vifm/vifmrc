@@ -162,7 +162,7 @@ command vgrep vim "+grep %a"
 " program.
 
 " Pgn
-filetype *.pgn scid %f &
+filetype *.pgn chessx %f 2> /dev/null &
 
 " Pdf
 filetype *.pdf zathura %f 2> /dev/null &
@@ -189,7 +189,7 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob
          \ ffprobe -pretty %c 2>&1
 
 " Web
-filetype *.html,*.htm links,mozilla,uzbl-browser %f %i &
+filetype *.html,*.htm,*.xhtml vimb %f %i &
 
 " Object
 filetype *.o nm %f | less
@@ -301,7 +301,7 @@ nmap yf :!echo %c:p | xclip %i<cr>
 nmap cc cw<c-u>
 
 " Opening console in current directory
-nmap ,t :!urxvt &<cr>
+nmap ,t :!termite &<cr>
 
 " Opening vim to edit .vifmrc
 nmap ,c :execute ':!vim $MYVIFMRC' | restart<cr>
