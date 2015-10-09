@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Rofi Application Launcher
+Comment=Rofi Application Launcher
+X-GNOME-FullName=Application Launcher
+Exec= rofi -fuzzy -sidebar-mode -show run
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=access
+Categories=Menu;
+MimeType=
+StartupNotify=true

@@ -25,7 +25,7 @@ border_color = #9d2933 100
 
 
 # Panel
-panel_items = TSBC
+panel_items = LSTBC
 panel_size = 99% 24
 panel_margin = 0 0
 panel_padding = 0 0 0
@@ -91,17 +91,18 @@ systray_padding = 0 0 0
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 16
-systray_icon_asb = 100 -100 0
+systray_icon_asb = 100 0 0
 systray_monitor = 1
 
 # Launcher
-launcher_padding = 0 0 2
+launcher_padding = 2 0 2
 launcher_background_id = 0
-launcher_icon_size = 22
+launcher_icon_size = 24
 launcher_icon_asb = 100 0 0
 launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
+launcher_item_app = ~/.local/share/applications/rofi.desktop
 
 # Clock
 time1_format = %H:%M
@@ -111,7 +112,7 @@ time1_timezone =
 time2_timezone = 
 time2_font = Terminus 8
 clock_font_color = #bcbcbc 100
-clock_padding = 4 0
+clock_padding = 2 0
 clock_background_id = 0
 clock_tooltip = 
 clock_tooltip_timezone = 
@@ -128,7 +129,7 @@ battery_low_cmd = notify-send "battery low"
 bat1_font = Terminus 8
 bat2_font = Terminus 8
 battery_font_color = #bcbcbc 100
-battery_padding = 4 0
+battery_padding = 2 0
 battery_background_id = 0
 battery_hide = 101
 battery_lclick_command = 
