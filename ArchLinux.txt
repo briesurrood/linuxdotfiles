@@ -1,5 +1,5 @@
-A guide to setting up a minmal Arch Linux distribution with Openbox and
-bspwm/herbstluftwm
+A guide to setting up a minmal Arch Linux distribution with bspwm or herbstluftwm
+with Xfce4 as backup desktop environment
 
 Installation
 ____________
@@ -10,6 +10,7 @@ ___________
 ttf-dejavu
 ttf-symbola
 freetype2
+terminus-font
 xorg
 xorg-driver
 networkmanager
@@ -23,6 +24,8 @@ _____________
 
 lightdm
 lightdm-gtk-greeter
+xfce4
+xfce4-goodies
 firefox
 chromium
 hexchat
@@ -35,34 +38,22 @@ tig
 termite
 weechat
 ed
-
-Window Manager
-______________
-
 lxappearance
-openbox
-  - dm-tool
-  - feh
-  - obconf
-  - obmenu
-  - openbox-themes
-  - nitrogen
-  - xcompmgr
-  - transset-df
-  - alsa-utils
-  - tint2
-  - volwheel
-  - nm-applet
-  - python2-xdg
-  - zenity
-  - gnome-icon-theme
-  - gnome-icon-theme-extras
-  - archlinux-xdg-menu
-leafpad
-thunar
-  - gvfs
-  - gvfs-mtp
-  - gvfs-ntfs
+dm-tool
+feh
+nitrogen
+xcompmgr
+transset-df
+alsa-utils
+tint2
+volwheel
+nm-applet
+python2-xdg
+zenity
+gnome-icon-theme
+gnome-icon-theme-extras
+nedit
+thunar [gvfs, gvfs-mtp, gvfs-ntfs]
 rofi
 
 Window Manager
@@ -74,7 +65,6 @@ Install Light DM
     /etc/lightdm/lightdm.conf should have greeter-session=lightdm-gtk-greeter
     /etc/lightdm/lightdm-gtk-greeter.conf to change background image
 GTK Theme: Adwaita
-Openbox Window: 1977 (Border window.active.border.color: #555555)
 Icon Theme: Gnome-Brave
 dm-tool switch-to-greeter can be used to lock
 Disable netctl and Enable NetworkManager
@@ -121,8 +111,11 @@ herbstluftwm
 - arandr
 - 100% Mouse Compatibility
 vimb
-bspwm - Try dzen2
-zsh/termie/tmux - Fix Home End
+bspwm
+- Try dzen2
+- Add power menu
+zsh/termie/tmux
+- Fix Home End
 
 FAQ
 ___
@@ -130,17 +123,6 @@ ___
 Sound is not working?
 
 For sound Use alsamixer and unmute the Master using m
-
-OpenBox Menu is not working?
-
-xdg_menu --format openbox3 --root-menu /etc/xdg/menus/arch-applications.menu > menu.xml
-<?xml version="1.0" encoding="utf-8"?>
-<openbox_menu xmlns="http://openbox.org/">
-<menu id="root-menu" label="Openbox 3">
-..
-..
-</menu>
-</openbox_menu>
 
 Links
 _____

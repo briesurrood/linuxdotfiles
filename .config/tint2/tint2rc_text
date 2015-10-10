@@ -25,7 +25,7 @@ border_color = #9d2933 100
 
 
 # Panel
-panel_items = LSTBC
+panel_items = LTSBC
 panel_size = 99% 24
 panel_margin = 0 0
 panel_padding = 0 0 0
@@ -87,7 +87,7 @@ mouse_scroll_up = prev_task
 mouse_scroll_down = next_task
 
 # System Tray
-systray_padding = 0 0 0
+systray_padding = 4 0 0
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 16
@@ -95,7 +95,7 @@ systray_icon_asb = 100 0 0
 systray_monitor = 1
 
 # Launcher
-launcher_padding = 2 0 2
+launcher_padding = 2 0 0
 launcher_background_id = 0
 launcher_icon_size = 24
 launcher_icon_asb = 100 0 0
@@ -145,5 +145,5 @@ tooltip_show_timeout = 0.5
 tooltip_hide_timeout = 0.1
 tooltip_padding = 2 2
 tooltip_background_id = 3
-tooltip_font_color = #bcbcbc 100
+tooltip_font_color = #ffffff 100
 tooltip_font = Sans Bold 10

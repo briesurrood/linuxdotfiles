@@ -1,6 +1,0 @@
-xset -b
-xcompmgr &
-feh --bg-scale ~/linuxdotfiles/.wallpapers/BlueLeaf.jpg &
-tint2 &
-nm-applet &
-volwheel &
