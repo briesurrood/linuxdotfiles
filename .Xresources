@@ -19,6 +19,13 @@ Xft.hinting:                   true
 Xft.hintstyle:                 hintfull
 Xft.dpi:                       96
 
+xterm*termName:                xterm-256color
+XTerm*locale:                  true
+XTerm*metaSendsEscape:         true
+Xterm*saveLines:               4096
+xterm*faceName:                DejaVu Sans Mono:size=10:antialias=false
+xterm*font:                    7x13
+
 rofi.font:                     Terminus 8
 rofi.fg:                       #ffffff
 rofi.bg:                       #121212

@@ -2,14 +2,14 @@
 # Background 1
 rounded = 0
 border_width = 1
-background_color = #363636 100
-border_color = #444444 100
+background_color = #262626 100
+border_color = #303030 100
 
 # Background 2
 rounded = 0
-border_width = 0
-background_color = #555555 100
-border_color = #676767 100
+border_width = 1
+background_color = #444444 100
+border_color = #4e4e4e 100
 
 # Background 3
 rounded = 0
@@ -17,29 +17,22 @@ border_width = 1
 background_color = #181818 100
 border_color = #191919 100
 
-# Background 4
-rounded = 0
-border_width = 0
-background_color = #9d2933 100
-border_color = #9d2933 100
-
-
 # Panel
 panel_items = LTSBC
-panel_size = 99% 24
+panel_size = 99% 20
 panel_margin = 0 0
 panel_padding = 0 0 0
 panel_background_id = 1
 wm_menu = 1
-panel_dock = 1
-panel_position = top center horizontal
+panel_dock = 0
+panel_position = bottom center horizontal
 panel_layer = top
 panel_monitor = all
 autohide = 0
 autohide_show_timeout = 0.25
 autohide_hide_timeout = 0.25
 autohide_height = 1
-strut_policy = follow_size
+strut_policy = normal
 panel_window_name = tint2
 disable_transparency = 0
 font_shadow = 0
@@ -57,8 +50,8 @@ taskbar_name_padding = 12 0
 taskbar_name_background_id = 0
 taskbar_name_active_background_id = 0
 taskbar_name_font = Terminus 8
-taskbar_name_font_color = #676767 100
-taskbar_name_active_font_color = #bcbcbc 100
+taskbar_name_font_color = #dadada 100
+taskbar_name_active_font_color = #dadada 100
 taskbar_distribute_size = 1
 taskbar_sort_order = none
 task_align = left
@@ -69,16 +62,16 @@ task_text = 1
 task_icon = 0
 task_centered = 1
 urgent_nb_of_blink = 1000000
-task_maximum_size = 64 24
+task_maximum_size = 64 20
 task_padding = 0 0 0
 task_font = Terminus 8
 task_tooltip = 1
-task_font_color = #bcbcbc 100
-task_active_font_color = #bcbcbc 100
+task_font_color = #dadada 100
+task_active_font_color = #dadada 100
 task_icon_asb = 100 0 0
 task_background_id = 0
 task_active_background_id = 2
-task_urgent_background_id = 4
+task_urgent_background_id = 2
 task_iconified_background_id = 0
 mouse_left = toggle_iconify
 mouse_middle = maximize_restore
@@ -97,7 +90,7 @@ systray_monitor = 1
 # Launcher
 launcher_padding = 2 0 0
 launcher_background_id = 0
-launcher_icon_size = 24
+launcher_icon_size = 20
 launcher_icon_asb = 100 0 0
 launcher_icon_theme_override = 0
 startup_notifications = 1
@@ -105,13 +98,13 @@ launcher_tooltip = 1
 launcher_item_app = ~/.local/share/applications/rofi.desktop
 
 # Clock
-time1_format = %H:%M
-time2_format = %d %b
+time1_format = %H:%M %d %b
+time2_format = 
 time1_font = Terminus 8
 time1_timezone = 
 time2_timezone = 
-time2_font = Terminus 8
-clock_font_color = #bcbcbc 100
+time2_font = Terminus 0
+clock_font_color = #dadada 100
 clock_padding = 2 0
 clock_background_id = 0
 clock_tooltip = 
@@ -127,8 +120,8 @@ battery_tooltip = 1
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
 bat1_font = Terminus 8
-bat2_font = Terminus 8
-battery_font_color = #bcbcbc 100
+bat2_font = Terminus 0
+battery_font_color = #dadada 100
 battery_padding = 2 0
 battery_background_id = 0
 battery_hide = 101
@@ -141,6 +134,7 @@ ac_connected_cmd =
 ac_disconnected_cmd = 
 
 # Tooltip
+tooltip = 1
 tooltip_show_timeout = 0.5
 tooltip_hide_timeout = 0.1
 tooltip_padding = 2 2

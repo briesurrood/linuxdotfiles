@@ -40,7 +40,6 @@ set foldmethod=indent
 set foldnestmax=2
 set nofoldenable
 set foldlevel=2
-set clipboard=unnamedplus,unnamed,exclude:cons\|linux
 
 "Autocommands"
 

@@ -1,5 +1,5 @@
-A guide to setting up a minmal Arch Linux distribution with bspwm or herbstluftwm
-with Xfce4 as backup desktop environment
+A guide to setting up a minmal Arch Linux distribution with bspwm or
+herbstluftwm with Xfce4 as backup desktop environment.
 
 Installation
 ____________
@@ -46,7 +46,6 @@ xcompmgr
 transset-df
 alsa-utils
 tint2
-volwheel
 nm-applet
 python2-xdg
 zenity
@@ -102,6 +101,8 @@ ___
 
 Stuff here should be cleared.
 
+zsh
+prezto-git
 neovim
 weechat
 - Backup
