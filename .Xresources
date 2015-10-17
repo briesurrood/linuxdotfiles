@@ -20,9 +20,9 @@ Xft.hintstyle:                 hintfull
 Xft.dpi:                       96
 
 xterm*termName:                xterm-256color
-XTerm*locale:                  true
-XTerm*metaSendsEscape:         true
-Xterm*saveLines:               4096
+xterm*locale:                  true
+xterm*metaSendsEscape:         true
+xterm*saveLines:               4096
 xterm*faceName:                DejaVu Sans Mono:size=10:antialias=false
 xterm*font:                    7x13
 
@@ -43,6 +43,10 @@ rofi.hlfg:                     #ffffff
 rofi.hlbg:                     #285577
 rofi.separator-style:          solid
 rofi.hide-scrollbar:           true
+
+dzen2.font:                    -*-terminus-medium-r-normal-*-12-*-*-*-c-*-*-1
+dzen2.foreground:              #bcbcbc
+dzen2.background:              #262626
 
 Emacs.font:                    DejaVu Sans Mono-9
 Emacs.menuBar:                 off

@@ -2,132 +2,131 @@ A guide to setting up a minmal Arch Linux distribution with bspwm or
 herbstluftwm with Xfce4 as backup desktop environment.
 
 Installation
-____________
+
 
 Libraries
-___________
 
-ttf-dejavu
-ttf-symbola
-freetype2
-terminus-font
-xorg
-xorg-driver
-networkmanager
-xorg-fonts-75dpi (Remove)
-xorg-fonts-100dpi (Remove)
-grub-customizer
-pinfo
+
+  ttf-dejavu
+  ttf-symbola
+  freetype2
+  terminus-font
+  xorg
+  xorg-driver
+  networkmanager
+  xorg-fonts-75dpi (Remove)
+  xorg-fonts-100dpi (Remove)
+  grub-customizer
+  pinfo
 
 Application
-_____________
 
-lightdm
-lightdm-gtk-greeter
-xfce4
-xfce4-goodies
-firefox
-chromium
-hexchat
-zathura-mupdf-git [With dependencies]
-networkmanager
-network-manager-applet
-gnome-keyring
-tmux
-tig
-termite
-weechat
-ed
-lxappearance
-dm-tool
-feh
-nitrogen
-xcompmgr
-transset-df
-alsa-utils
-tint2
-nm-applet
-python2-xdg
-zenity
-gnome-icon-theme
-gnome-icon-theme-extras
-nedit
-thunar [gvfs, gvfs-mtp, gvfs-ntfs]
-rofi
+
+  lightdm
+  lightdm-gtk-greeter
+  xfce4
+  xfce4-goodies
+  firefox
+  chromium
+  hexchat
+  zathura-mupdf-git [With dependencies]
+  networkmanager
+  network-manager-applet
+  gnome-keyring
+  tmux
+  tig
+  termite
+  weechat
+  ed
+  lxappearance
+  dm-tool
+  feh
+  nitrogen
+  xcompmgr
+  transset-df
+  alsa-utils
+  dzen2-git
+  sutils-git
+  xtitle-git
+  nm-applet
+  python2-xdg
+  gnome-icon-theme
+  gnome-icon-theme-extras
+  nedit
+  thunar [gvfs, gvfs-mtp, gvfs-ntfs]
+  rofi
 
 Window Manager
-______________
 
-grub-customizer
-Install Light DM
+  grub-customizer
+  Install Light DM
     Enable lightdm.service
     /etc/lightdm/lightdm.conf should have greeter-session=lightdm-gtk-greeter
     /etc/lightdm/lightdm-gtk-greeter.conf to change background image
-GTK Theme: Adwaita
-Icon Theme: Gnome-Brave
-dm-tool switch-to-greeter can be used to lock
-Disable netctl and Enable NetworkManager
-Enable Gnome Services during startup
+  GTK Theme: Adwaita
+  Icon Theme: Gnome-Brave
+  dm-tool switch-to-greeter can be used to lock
+  Disable netctl and Enable NetworkManager
+  Enable Gnome Services during startup
 
 INFO
-____
 
-Try `systemd-nspawn -bD /var/lib/lxc/centos` or its chroot equivalent
+  Try `systemd-nspawn -bD /var/lib/lxc/centos` or its chroot equivalent
+
 
 #FIXME
-______
 
-Check intel_set_pch_fifo_underrun error during boot
-Lightdm errors lightdm --test-mode --debug (Check why it won't work from tmux)
-Multiple URL's wont work in Tmux
+  Check intel_set_pch_fifo_underrun error during boot
+  Lightdm errors lightdm --test-mode --debug (Check why it won't work from tmux)
+  Multiple URL's wont work in Tmux
 
 #TODO
-_____
 
-Desktop Switcher and Conky like http://www.bunsenlabs.org
-Add Zsh Mode in Termite/Tmux
+  Desktop Switcher and Conky like http://www.bunsenlabs.org
+  Add Zsh Mode in Termite/Tmux
 
 
 Application
-___________
+
 
 Weechat
-_______
 
-Install iset /script install iset.pl
+  Install iset /script install iset.pl
 
 R&D
-___
 
-Stuff here should be cleared.
+  Stuff here should be cleared.
 
-zsh
-prezto-git
-neovim
-weechat
-- Backup
-herbstluftwm
-- Battery Indicator
-- Network Connector
-- arandr
-- 100% Mouse Compatibility
-vimb
-bspwm
-- Try dzen2
-- Add power menu
-zsh/termie/tmux
-- Fix Home End
+  zsh
+  prezto-git
+  neovim
+  weechat
+    Backup
+  herbstluftwm
+    Battery Indicator
+    Network Connector
+    arandr
+    100% Mouse Compatibility
+  vimb
+  bspwm
+    dzen2
+      Workspace, Date(With Calendar), Battery
+      Tabs, Rofi, Alert
+      https://github.com/benghaem/dotfiles
+    Add power menu
+    Check monocle
+  zsh/termie/tmux
+    Fix Home End
 
 FAQ
-___
 
-Sound is not working?
+  Sound is not working?
 
-For sound Use alsamixer and unmute the Master using m
+  For sound Use alsamixer and unmute the Master using m
 
 Links
-_____
 
-https://github.com/eiro/rcfiles/
-https://color.adobe.com/
-http://thedarnedestthing.com/
+  https://github.com/eiro/rcfiles/
+  https://color.adobe.com/
+  http://thedarnedestthing.com/
+  https://github.com/skwp/dotfiles/
