@@ -115,6 +115,8 @@ R&D
       https://github.com/benghaem/dotfiles
     Add power menu
     Check monocle
+    trayer
+    Check lemonbar as dzen2 
   zsh/termie/tmux
     Fix Home End
 
