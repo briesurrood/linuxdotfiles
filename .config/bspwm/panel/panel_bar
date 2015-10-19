@@ -19,8 +19,6 @@ while read -r line ; do
         W*)
             # bspwm internal state
             wm_infos=""
-            padding=""
-            action=""
             FG=$COLOR_FOREGROUND
             BG=$COLOR_BACKGROUND
             IFS=':'
@@ -28,6 +26,8 @@ while read -r line ; do
             while [ $# -gt 0 ] ; do
                 item=$1
                 name=${item#?}
+                padding=""
+                action=""
                 case $item in
                     M*)
                         # active monitor
@@ -49,48 +49,43 @@ while read -r line ; do
                         # focused occupied desktop
                         BG=$COLOR_FOCUSED_OCCUPIED_BG
                         FG=$COLOR_FOCUSED_OCCUPIED_FG
-                        padding=''
                         action="bspc desktop -f ${name}"
                         ;;
                     F*)
                         # focused free desktop
                         BG=$COLOR_FOCUSED_FREE_BG
                         FG=$COLOR_FOCUSED_FREE_FG
-                        padding=''
                         action="bspc desktop -f ${name}"
                         ;;
                     U*)
                         # focused urgent desktop
                         BG=$COLOR_FOCUSED_URGENT_BG
                         FG=$COLOR_FOCUSED_URGENT_FG
-                        padding=''
                         action="bspc desktop -f ${name}"
                         ;;
                     o*)
                         # occupied desktop
                         BG=$COLOR_OCCUPIED_BG
                         FG=$COLOR_OCCUPIED_FG
-                        padding=''
                         action="bspc desktop -f ${name}"
                         ;;
                     f*)
                         # free desktop
                         BG=$COLOR_FREE_BG
                         FG=$COLOR_FREE_FG
-                        padding=''
                         action="bspc desktop -f ${name}"
                         ;;
                     u*)
                         # urgent desktop
                         BG=$COLOR_URGENT_BG
                         FG=$COLOR_URGENT_FG
-                        padding=''
                         action="bspc desktop -f ${name}"
                         ;;
                     L*)
                         # layout
                         FG=$COLOR_LAYOUT_FG
                         BG=$COLOR_LAYOUT_BG
+                        action="bspc desktop -l next"
                         padding=' '
                         ;;
                 esac

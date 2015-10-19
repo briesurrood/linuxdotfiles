@@ -109,14 +109,10 @@ R&D
     100% Mouse Compatibility
   vimb
   bspwm
-    dzen2
-      Workspace, Date(With Calendar), Battery
-      Tabs, Rofi, Alert
-      https://github.com/benghaem/dotfiles
     Add power menu
     Check monocle
     trayer
-    Check lemonbar as dzen2 
+    lemonbar - https://github.com/neeasade/dotfiles/tree/master/bspwm
   zsh/termie/tmux
     Fix Home End
 
