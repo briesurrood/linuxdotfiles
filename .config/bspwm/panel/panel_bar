@@ -1,76 +1,103 @@
 #! /bin/sh
+#
+# Example panel for LemonBoy's bar
 
-. $HOME/.config/bspwm/panel/colors
-. $HOME/.config/bspwm/panel/settings
+. panel_colors
 
-NORMIFS=$IFS
-FIELDIFS=':'
+num_mon=$(bspc query -M | wc -l)
 
 while read -r line ; do
     case $line in
         S*)
             # clock output
-            sys_infos="${line#?}"
+            sys_infos="%{F$COLOR_STATUS_FG}%{B$COLOR_STATUS_BG} ${line#?} %{B-}%{F-}"
             ;;
         T*)
             # xtitle output
-            title="${line#?}"
+            title="%{F$COLOR_TITLE_FG}%{B$COLOR_TITLE_BG} ${line#?} %{B-}%{F-}"
             ;;
         W*)
             # bspwm internal state
             wm_infos=""
-            IFS=$FIELDIFS
+            padding=""
+            action=""
+            FG=$COLOR_FOREGROUND
+            BG=$COLOR_BACKGROUND
+            IFS=':'
             set -- ${line#?}
             while [ $# -gt 0 ] ; do
                 item=$1
+                name=${item#?}
                 case $item in
-                    [OoFfUu]*)
-                        # desktops
-                        name=${item#?}
-                        case $item in
-                            O*)
-                                # focused occupied desktop
-                                FG=$COLOR_FOCUSED_OCCUPIED_FG
-                                BG=$COLOR_FOCUSED_OCCUPIED_BG
-                                ;;
-                            F*)
-                                # focused free desktop
-                                FG=$COLOR_FOCUSED_FREE_FG
-                                BG=$COLOR_FOCUSED_FREE_BG
-                                ;;
-                            U*)
-                                # focused urgent desktop
-                                FG=$COLOR_FOCUSED_URGENT_FG
-                                BG=$COLOR_FOCUSED_URGENT_BG
-                                ;;
-                            o*)
-                                # occupied desktop
-                                FG=$COLOR_OCCUPIED_FG
-                                BG=$COLOR_OCCUPIED_BG
-                                ;;
-                            f*)
-                                # free desktop
-                                FG=$COLOR_FREE_FG
-                                BG=$COLOR_FREE_BG
-                                ;;
-                            u*)
-                                # urgent desktop
-                                FG=$COLOR_URGENT_FG
-                                BG=$COLOR_URGENT_BG
-                                ;;
-                        esac
-                        wm_infos="${wm_infos}^fg(${FG})^bg(${BG})^ca(1, bspc desktop -f ${name})^ca(2, bspc window -d ${name})${PADDING}${name}${PADDING}^ca()^ca()"
+                    M*)
+                        # active monitor
+                        if [ $num_mon -gt 1 ] ; then
+                            BG=$COLOR_ACTIVE_MONITOR_BG
+                            FG=$COLOR_ACTIVE_MONITOR_FG
+                            padding=' '
+                        fi
+                        ;;
+                    m*)
+                        # inactive monitor
+                        if [ $num_mon -gt 1 ] ; then
+                            BG=$COLOR_INACTIVE_MONITOR_BG
+                            FG=$COLOR_INACTIVE_MONITOR_FG
+                            padding=' '
+                        fi
+                        ;;
+                    O*)
+                        # focused occupied desktop
+                        BG=$COLOR_FOCUSED_OCCUPIED_BG
+                        FG=$COLOR_FOCUSED_OCCUPIED_FG
+                        padding=''
+                        action="bspc desktop -f ${name}"
+                        ;;
+                    F*)
+                        # focused free desktop
+                        BG=$COLOR_FOCUSED_FREE_BG
+                        FG=$COLOR_FOCUSED_FREE_FG
+                        padding=''
+                        action="bspc desktop -f ${name}"
+                        ;;
+                    U*)
+                        # focused urgent desktop
+                        BG=$COLOR_FOCUSED_URGENT_BG
+                        FG=$COLOR_FOCUSED_URGENT_FG
+                        padding=''
+                        action="bspc desktop -f ${name}"
+                        ;;
+                    o*)
+                        # occupied desktop
+                        BG=$COLOR_OCCUPIED_BG
+                        FG=$COLOR_OCCUPIED_FG
+                        padding=''
+                        action="bspc desktop -f ${name}"
+                        ;;
+                    f*)
+                        # free desktop
+                        BG=$COLOR_FREE_BG
+                        FG=$COLOR_FREE_FG
+                        padding=''
+                        action="bspc desktop -f ${name}"
+                        ;;
+                    u*)
+                        # urgent desktop
+                        BG=$COLOR_URGENT_BG
+                        FG=$COLOR_URGENT_FG
+                        padding=''
+                        action="bspc desktop -f ${name}"
                         ;;
                     L*)
                         # layout
-                        layout=$(printf "%s" "${item#?}" | sed 's/^\(.\).*/\U\1/')
-                        wm_infos="${wm_infos}^fg()^bg()${DUAL_PADDING}^fg($COLOR_LAYOUT_FG)^bg($COLOR_LAYOUT_BG)^ca(1, bspc desktop -l next)${PADDING}$layout${PADDING}^ca()^bg()${DUAL_PADDING}"
+                        FG=$COLOR_LAYOUT_FG
+                        BG=$COLOR_LAYOUT_BG
+                        padding=' '
                         ;;
                 esac
+                wm_infos="$wm_infos$padding%{F$FG}%{B$BG}%{A:$action:} ${name} %{A}%{B-}%{F-}$padding$padding"
                 shift
             done
-            IFS=$NORMIFS
             ;;
     esac
-    printf "%s\n" "^pa($LEFT_INDENT)${wm_infos}${title}^pa($RIGHT_INDENT)${sys_infos}"
+    printf "%s\n" "%{l}${wm_infos}%{c}${title}%{r}${sys_infos}"
 done
