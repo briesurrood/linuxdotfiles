@@ -9,29 +9,6 @@ directories_to_create = [os.path.join("", *each) for each in
                          [(home, ".backup.d"), (home, ".vim", "bundle")]]
 git_details = {}
 
-git_details[os.path.join(dotfiles_directory, ".emacs.d", "elisp")] = \
-    [
-    "https://github.com/winterTTr/ace-jump-mode.git",
-    "https://github.com/jwiegley/emacs-async.git",
-    #FIXME: Move evil to mercurial
-    "https://github.com/emacsmirror/evil.git",
-    "https://github.com/cofi/evil-leader.git",
-    "https://github.com/redguardtoo/evil-matchit.git",
-    "https://github.com/timcharper/evil-surround.git",
-    "https://github.com/gridaphobe/evil-god-state",
-    "https://github.com/syl20bnr/evil-escape.git",
-    "https://github.com/chrisdone/god-mode.git",
-    "https://github.com/DarwinAwardWinner/ido-ubiquitous.git",
-    "https://github.com/nonsequitur/smex.git",
-    "https://github.com/magit/magit.git",
-    "https://github.com/magit/git-modes.git",
-    "https://github.com/magnars/dash.el.git",
-    "https://github.com/jorgenschaefer/circe.git",
-    "https://github.com/Fanael/rainbow-delimiters.git",
-    "https://github.com/creichert/ido-vertical-mode.el.git"
-
-]
-
 git_details[os.path.join(home, ".vim", "bundle")] = \
     [
     "https://github.com/ctrlpvim/ctrlp.vim",
