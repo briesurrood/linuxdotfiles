@@ -22,6 +22,8 @@ Libraries
 Application
 
 
+  zsh
+  prezto-git
   lightdm
   lightdm-gtk-greeter
   xfce4
@@ -97,22 +99,18 @@ R&D
 
   Stuff here should be cleared.
 
-  zsh
-  prezto-git
   neovim
   weechat
-    Backup
-  herbstluftwm
-    Battery Indicator
-    Network Connector
-    arandr
-    100% Mouse Compatibility
+    Dotfiles Backup
   vimb
   bspwm
+    LatchGroup/StickyKeys
+    Tmux listing during load-time
     Add power menu
     Check monocle
     trayer
     lemonbar - https://github.com/neeasade/dotfiles/tree/master/bspwm
+      volume, battery
   zsh/termie/tmux
     Fix Home End
 
