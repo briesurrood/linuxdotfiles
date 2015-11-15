@@ -89,10 +89,10 @@ while read -r line ; do
                         padding=' '
                         ;;
                 esac
-                wm_infos="$wm_infos$padding%{F$FG}%{B$BG}%{A:$action:} ${name} %{A}%{B-}%{F-}$padding$padding"
+                wm_infos="$wm_infos$padding%{F$FG}%{B$BG}%{A:$action:} ${name} %{A}%{B-}%{F-}$padding"
                 shift
             done
             ;;
     esac
-    printf "%s\n" "%{l}${wm_infos}%{c}${title}%{r}${sys_infos}"
+    printf "%s\n" "%{l}%{A:rofi -fuzzy -sidebar-mode -show run:} Applications %{A}${wm_infos}${title}%{r}${sys_infos}"
 done

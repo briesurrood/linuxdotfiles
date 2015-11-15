@@ -22,7 +22,6 @@ git_details[os.path.join(home, ".vim", "bundle")] = \
     "https://github.com/tpope/vim-repeat"
 ]
 
-
 def build():
     #TODO Better way of doing?
     create_symlinks(os.listdir("."), dotfiles_directory, home)

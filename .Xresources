@@ -29,16 +29,16 @@ xterm*font:                    7x13
 rofi.font:                     Terminus 8
 rofi.fg:                       #ffffff
 rofi.bg:                       #121212
-rofi.bgalt:                    #121212
-rofi.bg-urgent:                #fdf6e3
 rofi.bc:                       #171717
+rofi.bgalt:                    #121212
+rofi.bg-urgent:                #808080
+rofi.fg-urgent:                #ffffff
 rofi.fg-active:                #ffffff
 rofi.bg-active:                #222222
-rofi.fg-urgent:                #dc322f
-rofi.hlfg-active:              #000000
-rofi.hlbg-active:              #eeeeee
+rofi.hlfg-active:              #ffffff
+rofi.hlbg-active:              #222222
 rofi.hlbg-urgent:              #dc322f
-rofi.hlfg-urgent:              #fdf6e3
+rofi.hlfg-urgent:              #ffffff
 rofi.hlfg:                     #ffffff
 rofi.hlbg:                     #285577
 rofi.separator-style:          solid

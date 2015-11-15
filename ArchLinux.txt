@@ -1,5 +1,5 @@
-A guide to setting up a minmal Arch Linux distribution with bspwm or
-herbstluftwm with Xfce4 as backup desktop environment.
+A guide to setting up a minmal Arch Linux distribution with bspwm
+with Xfce4 as backup desktop environment.
 
 Installation
 
@@ -18,14 +18,16 @@ Libraries
   xorg-fonts-100dpi (Remove)
   grub-customizer
   pinfo
+  gnu-free-fonts
+  ttf-freefont
+  extra/ttf-linux-libertin
 
 Application
 
 
   zsh
   prezto-git
-  lightdm
-  lightdm-gtk-greeter
+  lxdm
   xfce4
   xfce4-goodies
   firefox
@@ -61,10 +63,6 @@ Application
 Window Manager
 
   grub-customizer
-  Install Light DM
-    Enable lightdm.service
-    /etc/lightdm/lightdm.conf should have greeter-session=lightdm-gtk-greeter
-    /etc/lightdm/lightdm-gtk-greeter.conf to change background image
   GTK Theme: Adwaita
   Icon Theme: Gnome-Brave
   dm-tool switch-to-greeter can be used to lock
@@ -79,8 +77,9 @@ INFO
 #FIXME
 
   Check intel_set_pch_fifo_underrun error during boot
-  Lightdm errors lightdm --test-mode --debug (Check why it won't work from tmux)
   Multiple URL's wont work in Tmux
+  Check panel with multiple monitors and fix long contents
+  Webex
 
 #TODO
 
@@ -103,16 +102,20 @@ R&D
   weechat
     Dotfiles Backup
   vimb
+  dwb
   bspwm
     LatchGroup/StickyKeys
     Tmux listing during load-time
     Add power menu
     Check monocle
-    trayer
+    Trayer
     lemonbar - https://github.com/neeasade/dotfiles/tree/master/bspwm
-      volume, battery
+      Volume, Battery
+      Restrict Title size
+    https://wiki.archlinux.org/index.php/Bspwm
   zsh/termie/tmux
     Fix Home End
+  https://aur.archlinux.org/packages/castnow-git/
 
 FAQ
 

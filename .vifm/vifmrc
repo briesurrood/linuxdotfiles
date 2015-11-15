@@ -113,7 +113,6 @@ set statusline="  %t%= %A %10u:%-7g %15s %20d  "
 
 " :mark mark /full/directory/path [filename]
 
-mark b ~/bin/
 mark h ~/
 
 " :com[mand] command_name action
@@ -174,7 +173,7 @@ filextype *.ps,*.ps.gz gv %c %i &
 filetype *.djvu zathura %f 2> /dev/null &
 
 " Audio
-filetype *.wav,*.mp3,*.flac,*.ogg,*.m4a
+filetype *.wav,*.mp3,*.flac,*.ogg,*.m4a,*.webm
        \ {Play using Audacious}
        \ mpv --profile=pseudo-gui %f 2> /dev/null &,
 fileviewer *.mp3 mp3info
@@ -195,9 +194,9 @@ filetype *.html,*.htm,*.xhtml vimb %f %i &
 filetype *.o nm %f | less
 
 " Image
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-        \ {View in feh}
-        \ feh %f &,
+filetype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+       \ {View in feh}
+       \ feh %f &,
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm convert -identify %f -verbose /dev/null
 
 " MD5
