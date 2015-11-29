@@ -69,13 +69,13 @@ hi Operator       cterm=none       ctermfg=154
 hi Function       cterm=none       ctermfg=214
 hi String         cterm=none       ctermfg=197
 hi Number         cterm=none       ctermfg=197
-hi PreProc        cterm=none       ctermfg=39
+hi PreProc        cterm=none       ctermfg=51
 hi Constant       cterm=none       ctermfg=197
-hi Special        cterm=none       ctermfg=201   ctermbg=none
+hi Special        cterm=none       ctermfg=197   ctermbg=none
 hi Statement      cterm=none       ctermfg=46
 hi Type           cterm=none       ctermfg=190
 hi Title          cterm=none       ctermfg=214
-hi Identifier     cterm=none       ctermfg=201
+hi Identifier     cterm=none       ctermfg=197
 hi Underlined     cterm=none       ctermfg=none
 hi Ignore         cterm=none       ctermfg=none
 hi Todo           cterm=bold       ctermfg=none  ctermbg=none

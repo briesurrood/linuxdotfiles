@@ -21,6 +21,7 @@ Libraries
   gnu-free-fonts
   ttf-freefont
   extra/ttf-linux-libertin
+  intel-ucode (Rebuild Grub - https://wiki.archlinux.org/index.php/Microcode)
 
 Application
 
@@ -28,6 +29,7 @@ Application
   zsh
   prezto-git
   lxdm
+  slock
   xfce4
   xfce4-goodies
   firefox
@@ -76,10 +78,13 @@ INFO
 
 #FIXME
 
-  Check intel_set_pch_fifo_underrun error during boot
-  Multiple URL's wont work in Tmux
-  Check panel with multiple monitors and fix long contents
-  Webex
+  Boot - Fifo Underun Error - https://bugzilla.kernel.org/show_bug.cgi?id=79261
+  Multiple Line URL's wont work in Tmux
+  Webex is clunky
+  Bspwm
+    Check panel with multiple monitors and fix long contents
+      Screen jitter with workspace button(VGA1 for ex.) when you have multiple monitors
+    Chrome tab movement is buggy
 
 #TODO
 

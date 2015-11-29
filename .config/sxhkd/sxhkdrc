@@ -84,16 +84,19 @@ super + Return
 	termite
 
 super + space
-	dmenu_run
+	rofi -fuzzy -sidebar-mode -show run
 
 super + q
-        rofi -fuzzy -sidebar-mode -show run &
+        rofi -fuzzy -sidebar-mode -show run
 
 super + a
-        rofi -fuzzy -sidebar-mode -show window &
+        rofi -fuzzy -sidebar-mode -show window
 
 super + z
-        rofi -modi "tmux:/home/nishant/linuxdotfiles/tmux-rofi.sh" -show tmux &
+        rofi -modi "tmux:/home/nishant/linuxdotfiles/tmux-rofi.sh" -show tmux
+
+super + x
+        slock
 
 # make sxhkd reload its configuration files:
 super + Escape
