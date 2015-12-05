@@ -1,0 +1,6 @@
+xset -b
+xcompmgr &
+feh --bg-scale ~/linuxdotfiles/.wallpapers/TronLightCycle.png &
+tint2 &
+volwheel &
+#nm-applet &
