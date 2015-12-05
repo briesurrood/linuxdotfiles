@@ -1,240 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/">
-	<menu id="root-menu" label="Openbox 3">
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-util.png" id="Accessories" label="Accessories">
-			<item icon="/usr/share/icons/hicolor/16x16/apps/leafpad.png" label="Leafpad">
-				<action name="Execute">
-					<execute>leafpad </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/shutter.png" label="Shutter">
-				<action name="Execute">
-					<execute>shutter </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/gvim.png" label="Vi IMproved">
-				<action name="Execute">
-					<execute>gvim -f </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/xarchiver.png" label="Xarchiver">
-				<action name="Execute">
-					<execute>xarchiver</execute>
-				</action>
-			</item>
-			<item label="ipython">
-				<action name="Execute">
-					<execute>termite -e ipython</execute>
-				</action>
-			</item>
-		</menu>
-		<!-- Accessories -->
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-joystick.png" id="Games" label="Games">
-			<item icon="/usr/share/pixmaps/chessx.png" label="ChessX">
-				<action name="Execute">
-					<execute>chessx </execute>
-				</action>
-			</item>
-		</menu>
-		<!-- Games -->
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-graphics.png" id="Graphics" label="Graphics">
-			<item icon="/usr/share/icons/hicolor/16x16/apps/evince.png" label="Document Viewer">
-				<action name="Execute">
-					<execute>evince </execute>
-				</action>
-			</item>
-			<item icon="///usr/share/feh/images/feh.png" label="feh">
-				<action name="Execute">
-					<execute>feh </execute>
-				</action>
-			</item>
-		</menu>
-		<!-- Graphics -->
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-globe.png" id="Internet" label="Internet">
-			<item icon="/usr/share/icons/gnome/16x16/devices/network-wired.png" label="Avahi SSH Server Browser">
-				<action name="Execute">
-					<execute>/usr/bin/bssh</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/16x16/devices/network-wired.png" label="Avahi VNC Server Browser">
-				<action name="Execute">
-					<execute>/usr/bin/bvnc</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/chromium.png" label="Chromium">
-				<action name="Execute">
-					<execute>chromium </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/filezilla.png" label="FileZilla">
-				<action name="Execute">
-					<execute>filezilla</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/firefox.png" label="Firefox">
-				<action name="Execute">
-					<execute>firefox </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/48x48/apps/hexchat.png" label="HexChat">
-				<action name="Execute">
-					<execute>hexchat </execute>
-				</action>
-			</item>
-		</menu>
-		<!-- Internet -->
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-applications.png" id="Office" label="Office">
-			<item icon="/usr/share/icons/hicolor/16x16/apps/evince.png" label="Document Viewer">
-				<action name="Execute">
-					<execute>evince </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/zathura.png" label="Zathura">
-				<action name="Execute">
-					<execute>zathura </execute>
-				</action>
-			</item>
-		</menu>
-		<!-- Office -->
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-devel.png" id="Programming" label="Programming">
-			<item icon="/usr/share/icons/hicolor/32x32/apps/assistant.png" label="Qt Assistant">
-				<action name="Execute">
-					<execute>/usr/lib/qt/bin/assistant</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png" label="Qt Designer">
-				<action name="Execute">
-					<execute>/usr/lib/qt/bin/designer</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/linguist.png" label="Qt Linguist">
-				<action name="Execute">
-					<execute>/usr/lib/qt/bin/linguist</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/32x32/apps/qdbusviewer.png" label="Qt QDbusViewer ">
-				<action name="Execute">
-					<execute>/usr/lib/qt/bin/qdbusviewer</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/32x32/apps/assistant-qt4.png" label="Qt4 Assistant ">
-				<action name="Execute">
-					<execute>assistant-qt4</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/128x128/apps/designer-qt4.png" label="Qt4 Designer">
-				<action name="Execute">
-					<execute>designer-qt4</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/linguist-qt4.png" label="Qt4 Linguist ">
-				<action name="Execute">
-					<execute>linguist-qt4</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/32x32/apps/qdbusviewer-qt4.png" label="Qt4 QDbusViewer ">
-				<action name="Execute">
-					<execute>qdbusviewer-qt4</execute>
-				</action>
-			</item>
-			<item label="ipython">
-				<action name="Execute">
-					<execute>termite -e ipython</execute>
-				</action>
-			</item>
-		</menu>
-		<!-- Programming -->
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-multimedia.png" id="Sound &amp; Video" label="Sound &amp; Video">
-			<item icon="/usr/share/pixmaps/hdspconf.png" label="HDSPConf">
-				<action name="Execute">
-					<execute>hdspconf</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/hdspmixer.png" label="HDSPMixer">
-				<action name="Execute">
-					<execute>hdspmixer</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/16x16/apps/multimedia-volume-control.png" label="PulseAudio Volume Control">
-				<action name="Execute">
-					<execute>pavucontrol</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/qv4l2.png" label="Qt V4L2 test Utility">
-				<action name="Execute">
-					<execute>qv4l2</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/mpv.png" label="mpv Media Player">
-				<action name="Execute">
-					<execute>mpv --profile=pseudo-gui -- </execute>
-				</action>
-			</item>
-		</menu>
-		<!-- Sound & Video -->
-		<menu icon="/usr/share/icons/gnome/16x16/categories/gnome-system.png" id="System Tools" label="System Tools">
-			<item icon="/usr/share/icons/gnome/16x16/devices/network-wired.png" label="Avahi Zeroconf Browser">
-				<action name="Execute">
-					<execute>/usr/bin/avahi-discover</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/Thunar.png" label="Bulk Rename">
-				<action name="Execute">
-					<execute>/usr/lib/Thunar/ThunarBulkRename </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/16x16/apps/system-file-manager.png" label="File Manager PCManFM">
-				<action name="Execute">
-					<execute>pcmanfm </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/grub-customizer.png" label="Grub Customizer">
-				<action name="Execute">
-					<execute>grub-customizer</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/16x16/apps/utilities-terminal.png" label="Termite">
-				<action name="Execute">
-					<execute>termite</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/hicolor/16x16/apps/Thunar.png" label="Thunar File Manager">
-				<action name="Execute">
-					<execute>thunar </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/xterm-color_48x48.xpm" label="UXTerm">
-				<action name="Execute">
-					<execute>uxterm</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/vifm.png" label="Vifm">
-				<action name="Execute">
-					<execute>termite -e vifm </execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/xterm-color_48x48.xpm" label="XTerm">
-				<action name="Execute">
-					<execute>xterm</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="Openbox" label="Openbox">
-			<item label="Reconfigure">
-				<action name="Reconfigure"/>
-			</item>
-			<item label="Restart">
-				<action name="Restart"/>
-			</item>
-                        <item label="Lock">
-				<action name="Execute">
-					<execute>dm-tool switch-to-greeter</execute>
-                                </action>
-			</item>
-			<item label="Exit">
-				<action name="Exit"/>
-			</item>
-		</menu>
-		<!-- System Tools -->
-	</menu>
+    <menu id="Applications" />
+    <menu id="root-menu" label="Openbox 3">
+        <menu id="Accessories" label="Accessories" icon="/usr/share/icons/gnome/16x16/categories/gnome-util.png">
+            <item label="Files" icon="/usr/share/icons/gnome/16x16/apps/system-file-manager.png">
+                <action name="Execute"><execute>nautilus --new-window </execute></action>
+            </item>
+            <item label="Mousepad" icon="/usr/share/icons/gnome/16x16/apps/accessories-text-editor.png">
+                <action name="Execute"><execute>mousepad </execute></action>
+            </item>
+            <item label="Redshift">
+                <action name="Execute"><execute>redshift-gtk</execute></action>
+            </item>
+            <item label="Shutter" icon="/usr/share/icons/hicolor/16x16/apps/shutter.png">
+                <action name="Execute"><execute>shutter </execute></action>
+            </item>
+            <item label="Vi IMproved" icon="/usr/share/pixmaps/gvim.png">
+                <action name="Execute"><execute>gvim -f </execute></action>
+            </item>
+            <item label="Xarchiver" icon="/usr/share/icons/hicolor/16x16/apps/xarchiver.png">
+                <action name="Execute"><execute>xarchiver</execute></action>
+            </item>
+            <item label="ipython">
+                <action name="Execute"><execute>xterm -e ipython</execute></action>
+            </item>
+        </menu> <!-- Accessories -->
+        <menu id="Education" label="Education">
+            <item label="LibreOffice Math" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-math.png">
+                <action name="Execute"><execute>libreoffice --math </execute></action>
+            </item>
+        </menu> <!-- Education -->
+        <menu id="Games" label="Games" icon="/usr/share/icons/gnome/16x16/categories/gnome-joystick.png">
+            <item label="ChessX" icon="/usr/share/pixmaps/chessx.png">
+                <action name="Execute"><execute>chessx </execute></action>
+            </item>
+        </menu> <!-- Games -->
+        <menu id="Graphics" label="Graphics" icon="/usr/share/icons/gnome/16x16/categories/gnome-graphics.png">
+            <item label="Document Viewer" icon="/usr/share/icons/hicolor/16x16/apps/evince.png">
+                <action name="Execute"><execute>evince </execute></action>
+            </item>
+            <item label="GNU Image Manipulation Program" icon="/usr/share/icons/hicolor/16x16/apps/gimp.png">
+                <action name="Execute"><execute>gimp-2.8 </execute></action>
+            </item>
+            <item label="Gpick" icon="/usr/share/icons/hicolor/48x48/apps/gpick.png">
+                <action name="Execute"><execute>gpick</execute></action>
+            </item>
+            <item label="LibreOffice Draw" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png">
+                <action name="Execute"><execute>libreoffice --draw </execute></action>
+            </item>
+            <item label="feh" icon="///usr/share/feh/images/feh.png">
+                <action name="Execute"><execute>feh </execute></action>
+            </item>
+        </menu> <!-- Graphics -->
+        <menu id="Internet" label="Internet" icon="/usr/share/icons/gnome/16x16/categories/gnome-globe.png">
+            <item label="Avahi SSH Server Browser" icon="/usr/share/icons/gnome/16x16/devices/network-wired.png">
+                <action name="Execute"><execute>/usr/bin/bssh</execute></action>
+            </item>
+            <item label="Avahi VNC Server Browser" icon="/usr/share/icons/gnome/16x16/devices/network-wired.png">
+                <action name="Execute"><execute>/usr/bin/bvnc</execute></action>
+            </item>
+            <item label="Chromium" icon="/usr/share/icons/hicolor/16x16/apps/chromium.png">
+                <action name="Execute"><execute>chromium </execute></action>
+            </item>
+            <item label="FileZilla" icon="/usr/share/icons/hicolor/16x16/apps/filezilla.png">
+                <action name="Execute"><execute>filezilla</execute></action>
+            </item>
+            <item label="Firefox" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png">
+                <action name="Execute"><execute>firefox </execute></action>
+            </item>
+            <item label="Firefox Developer" icon="/usr/share/pixmaps/firefox-developer-icon.png">
+                <action name="Execute"><execute>firefox-developer </execute></action>
+            </item>
+            <item label="HexChat" icon="/usr/share/icons/hicolor/48x48/apps/hexchat.png">
+                <action name="Execute"><execute>hexchat </execute></action>
+            </item>
+            <item label="Remmina" icon="/usr/share/icons/hicolor/16x16/apps/remmina.png">
+                <action name="Execute"><execute>remmina</execute></action>
+            </item>
+            <item label="TigerVNC Viewer" icon="/usr/share/icons/hicolor/16x16/apps/tigervnc.png">
+                <action name="Execute"><execute>/usr/bin/vncviewer</execute></action>
+            </item>
+            <item label="Transmission" icon="/usr/share/icons/hicolor/16x16/apps/transmission.png">
+                <action name="Execute"><execute>transmission-gtk </execute></action>
+            </item>
+        </menu> <!-- Internet -->
+        <menu id="Office" label="Office" icon="/usr/share/icons/gnome/16x16/categories/gnome-applications.png">
+            <item label="Document Viewer" icon="/usr/share/icons/hicolor/16x16/apps/evince.png">
+                <action name="Execute"><execute>evince </execute></action>
+            </item>
+            <item label="FBReader" icon="/usr/share/pixmaps/FBReader.png">
+                <action name="Execute"><execute>FBReader </execute></action>
+            </item>
+            <item label="LibreOffice" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-startcenter.png">
+                <action name="Execute"><execute>libreoffice </execute></action>
+            </item>
+            <item label="LibreOffice Base" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-base.png">
+                <action name="Execute"><execute>libreoffice --base </execute></action>
+            </item>
+            <item label="LibreOffice Calc" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-calc.png">
+                <action name="Execute"><execute>libreoffice --calc </execute></action>
+            </item>
+            <item label="LibreOffice Draw" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png">
+                <action name="Execute"><execute>libreoffice --draw </execute></action>
+            </item>
+            <item label="LibreOffice Impress" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-impress.png">
+                <action name="Execute"><execute>libreoffice --impress </execute></action>
+            </item>
+            <item label="LibreOffice Math" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-math.png">
+                <action name="Execute"><execute>libreoffice --math </execute></action>
+            </item>
+            <item label="LibreOffice Writer" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-writer.png">
+                <action name="Execute"><execute>libreoffice --writer </execute></action>
+            </item>
+            <item label="Master PDF Editor" icon="/usr/share/pixmaps/pdfeditor.png">
+                <action name="Execute"><execute>/opt/masterpdfeditor/masterpdfeditor3 </execute></action>
+            </item>
+            <item label="Zathura" icon="/home/nishant/.icons/zathura.png">
+                <action name="Execute"><execute>zathura </execute></action>
+            </item>
+        </menu> <!-- Office -->
+        <menu id="Programming" label="Programming" icon="/usr/share/icons/gnome/16x16/categories/gnome-devel.png">
+            <item label="CMake" icon="/usr/share/icons/hicolor/32x32/apps/CMakeSetup.png">
+                <action name="Execute"><execute>cmake-gui </execute></action>
+            </item>
+            <item label="DBeaver" icon="/usr/share/icons/hicolor/48x48/apps/dbeaver.xpm">
+                <action name="Execute"><execute>/opt/dbeaver/dbeaver</execute></action>
+            </item>
+            <item label="FLUID" icon="/usr/share/icons/hicolor/16x16/apps/fluid.png">
+                <action name="Execute"><execute>fluid </execute></action>
+            </item>
+            <item label="GNUSim8085" icon="///usr/share/icons/hicolor/scalable/apps/gnusim8085.svg">
+                <action name="Execute"><execute>gnusim8085</execute></action>
+            </item>
+            <item label="Qt Assistant" icon="/usr/share/icons/hicolor/32x32/apps/assistant.png">
+                <action name="Execute"><execute>/usr/lib/qt/bin/assistant</execute></action>
+            </item>
+            <item label="Qt Designer" icon="/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png">
+                <action name="Execute"><execute>/usr/lib/qt/bin/designer</execute></action>
+            </item>
+            <item label="Qt Linguist" icon="/usr/share/icons/hicolor/16x16/apps/linguist.png">
+                <action name="Execute"><execute>/usr/lib/qt/bin/linguist</execute></action>
+            </item>
+            <item label="Qt QDbusViewer " icon="/usr/share/icons/hicolor/32x32/apps/qdbusviewer.png">
+                <action name="Execute"><execute>/usr/lib/qt/bin/qdbusviewer</execute></action>
+            </item>
+            <item label="Qt4 Assistant " icon="/usr/share/icons/hicolor/32x32/apps/assistant-qt4.png">
+                <action name="Execute"><execute>assistant-qt4</execute></action>
+            </item>
+            <item label="Qt4 Designer" icon="/usr/share/icons/hicolor/128x128/apps/designer-qt4.png">
+                <action name="Execute"><execute>designer-qt4</execute></action>
+            </item>
+            <item label="Qt4 Linguist " icon="/usr/share/icons/hicolor/16x16/apps/linguist-qt4.png">
+                <action name="Execute"><execute>linguist-qt4</execute></action>
+            </item>
+            <item label="Qt4 QDbusViewer " icon="/usr/share/icons/hicolor/32x32/apps/qdbusviewer-qt4.png">
+                <action name="Execute"><execute>qdbusviewer-qt4</execute></action>
+            </item>
+            <item label="ipython">
+                <action name="Execute"><execute>xterm -e ipython</execute></action>
+            </item>
+        </menu> <!-- Programming -->
+        <menu id="Multimedia" label="Multimedia" icon="/usr/share/icons/gnome/16x16/categories/gnome-multimedia.png">
+            <item label="Cheese" icon="/usr/share/icons/hicolor/16x16/apps/cheese.png">
+                <action name="Execute"><execute>cheese</execute></action>
+            </item>
+            <item label="HDSPConf" icon="/usr/share/pixmaps/hdspconf.png">
+                <action name="Execute"><execute>hdspconf</execute></action>
+            </item>
+            <item label="HDSPMixer" icon="/usr/share/pixmaps/hdspmixer.png">
+                <action name="Execute"><execute>hdspmixer</execute></action>
+            </item>
+            <item label="PulseAudio Volume Control" icon="/usr/share/icons/hicolor/16x16/apps/multimedia-volume-control.png">
+                <action name="Execute"><execute>pavucontrol</execute></action>
+            </item>
+            <item label="Qt V4L2 test Utility" icon="/usr/share/icons/hicolor/16x16/apps/qv4l2.png">
+                <action name="Execute"><execute>qv4l2</execute></action>
+            </item>
+            <item label="QtAV Player" icon="/usr/share/icons/hicolor/64x64/apps/QtAV.svg">
+                <action name="Execute"><execute>qtav-player -f </execute></action>
+            </item>
+            <item label="QtAV QML Player" icon="/usr/share/icons/hicolor/64x64/apps/QtAV.svg">
+                <action name="Execute"><execute>QMLPlayer -f </execute></action>
+            </item>
+            <item label="SMTube" icon="/usr/share/icons/hicolor/16x16/apps/smtube.png">
+                <action name="Execute"><execute>smtube</execute></action>
+            </item>
+            <item label="Sonata" icon="/usr/share/pixmaps/sonata.png">
+                <action name="Execute"><execute>sonata</execute></action>
+            </item>
+            <item label="VolWheel">
+                <action name="Execute"><execute>volwheel</execute></action>
+            </item>
+            <item label="mpv Media Player" icon="/usr/share/icons/hicolor/16x16/apps/mpv.png">
+                <action name="Execute"><execute>mpv --profile=pseudo-gui -- </execute></action>
+            </item>
+        </menu> <!-- Sound & Video -->
+        <menu id="System Tools" label="System Tools" icon="/usr/share/icons/gnome/16x16/categories/gnome-system.png">
+            <item label="Avahi Zeroconf Browser" icon="/usr/share/icons/gnome/16x16/devices/network-wired.png">
+                <action name="Execute"><execute>/usr/bin/avahi-discover</execute></action>
+            </item>
+            <item label="Cairo-Dock" icon="/usr/share/pixmaps/cairo-dock.svg">
+                <action name="Execute"><execute>cairo-dock</execute></action>
+            </item>
+            <item label="Cairo-Dock (Fallback Mode)" icon="/usr/share/pixmaps/cairo-dock.svg">
+                <action name="Execute"><execute>cairo-dock -A</execute></action>
+            </item>
+            <item label="Color Profile Viewer" icon="/usr/share/icons/hicolor/16x16/apps/gnome-color-manager.png">
+                <action name="Execute"><execute>gcm-viewer</execute></action>
+            </item>
+            <item label="File Manager PCManFM" icon="/usr/share/icons/gnome/16x16/apps/system-file-manager.png">
+                <action name="Execute"><execute>pcmanfm </execute></action>
+            </item>
+            <item label="Grub Customizer" icon="/usr/share/icons/hicolor/16x16/apps/grub-customizer.png">
+                <action name="Execute"><execute>grub-customizer</execute></action>
+            </item>
+            <item label="Htop" icon="/usr/share/pixmaps/htop.png">
+                <action name="Execute"><execute>termite -e htop</execute></action>
+            </item>
+            <item label="Oracle VM VirtualBox" icon="/usr/share/icons/hicolor/16x16/mimetypes/virtualbox.png">
+                <action name="Execute"><execute>VirtualBox </execute></action>
+            </item>
+            <item label="Termite" icon="/usr/share/icons/gnome/16x16/apps/utilities-terminal.png">
+                <action name="Execute"><execute>termite</execute></action>
+            </item>
+            <item label="UNetbootin" icon="/usr/share/icons/hicolor/16x16/apps/unetbootin.png">
+                <action name="Execute"><execute>/usr/bin/unetbootin_polkit</execute></action>
+            </item>
+            <item label="Vifm" icon="/usr/share/pixmaps/vifm.png">
+                <action name="Execute"><execute>termite -e vifm </execute></action>
+            </item>
+            <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+                <action name="Execute"><execute>xterm</execute></action>
+            </item>
+        </menu>
+        <!-- System Tools -->
+        <menu id="Openbox" label="Openbox">
+            <item label="Reconfigure">
+                <action name="Reconfigure"/>
+            </item>
+            <item label="Restart">
+                <action name="Restart"/>
+            </item>
+            <item label="Lock">
+                <action name="Execute">
+                    <execute>dm-tool switch-to-greeter</execute>
+                </action>
+            </item>
+            <item label="Exit">
+                <action name="Exit"/>
+            </item>
+        </menu>
+        <!-- System Tools -->
+    </menu>
 </openbox_menu>

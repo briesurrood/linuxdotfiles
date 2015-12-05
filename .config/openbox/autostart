@@ -1,6 +1,5 @@
 xset -b
 xcompmgr &
-feh --bg-scale ~/linuxdotfiles/.wallpapers/TronLightCycle.png &
+feh --bg-scale ~/linuxdotfiles/.wallpapers/Arch-Blue.png &
 tint2 &
 volwheel &
-#nm-applet &

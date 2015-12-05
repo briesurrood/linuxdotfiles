@@ -235,7 +235,7 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>dmenu_run</command>
+        <command>rofi -fuzzy -sidebar-mode -show "run"</command>
       </action>
     </keybind>
     <keybind key="W-t">
@@ -245,12 +245,12 @@
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>dm-tool switch-to-greeter</command>
+        <command>slock</command>
       </action>
     </keybind>
-    <keybind key="W-BackSpace">
+    <keybind key="W-w">
       <action name="Execute">
-        <command>rofi -show "window"</command>
+        <command>rofi -fuzzy -sidebar-mode -show "window"</command>
       </action>
     </keybind>
     <keybind key="C-A-c">

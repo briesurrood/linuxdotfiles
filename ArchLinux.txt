@@ -1,5 +1,5 @@
 A guide to setting up a minmal Arch Linux distribution with bspwm
-with Xfce4 as backup desktop environment.
+with OpenBox+Tint2/Budgie as backup desktop environment.
 
 Installation
 
@@ -30,8 +30,9 @@ Application
   prezto-git
   lxdm
   slock
-  xfce4
-  xfce4-goodies
+  archlinux-xdg-menu
+  openbox
+  tint2
   firefox
   chromium
   hexchat
@@ -55,9 +56,11 @@ Application
   sutils-git
   xtitle-git
   nm-applet
+  volwheel
   python2-xdg
   gnome-icon-theme
   gnome-icon-theme-extras
+  deepin-icon-theme
   nedit
   thunar [gvfs, gvfs-mtp, gvfs-ntfs]
   rofi
@@ -134,3 +137,7 @@ Links
   https://color.adobe.com/
   http://thedarnedestthing.com/
   https://github.com/skwp/dotfiles/
+
+Hacks
+
+  /etc/hosts has been modified
