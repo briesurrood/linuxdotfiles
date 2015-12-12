@@ -19,7 +19,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>1977-Black</name>
+    <name>Nightmare</name>
     <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
@@ -233,7 +233,7 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="W-x">
       <action name="Execute">
         <command>rofi -fuzzy -sidebar-mode -show "run"</command>
       </action>
@@ -248,9 +248,13 @@
         <command>slock</command>
       </action>
     </keybind>
-    <keybind key="W-w">
+    <keybind key="W-a">
       <action name="Execute">
         <command>rofi -fuzzy -sidebar-mode -show "window"</command>
+      </action>
+    </keybind>
+    <keybind key="W-q">
+      <action name="close">
       </action>
     </keybind>
     <keybind key="C-A-c">

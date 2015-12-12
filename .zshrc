@@ -13,9 +13,3 @@ autoload -Uz compinit
 compinit
 
 bindkey -e
-
-#DEBUG
-export PANEL_FIFO=/tmp/panel-fifo
-export PATH=$PATH:$HOME/.config/bspwm/panel
-export PANEL_FONT_FAMILY='-*-terminus-medium-r-normal-*-12-*-*-*-c-*-*-1'
-export PANEL_HEIGHT=15

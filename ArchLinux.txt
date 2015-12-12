@@ -33,6 +33,7 @@ Application
   archlinux-xdg-menu
   openbox
   tint2
+  plank
   firefox
   chromium
   hexchat
@@ -56,13 +57,13 @@ Application
   sutils-git
   xtitle-git
   nm-applet
-  volwheel
+  pnmixer
   python2-xdg
   gnome-icon-theme
   gnome-icon-theme-extras
   deepin-icon-theme
   nedit
-  thunar [gvfs, gvfs-mtp, gvfs-ntfs]
+  spacefm [gvfs, gvfs-mtp, gvfs-ntfs]
   rofi
 
 Window Manager
